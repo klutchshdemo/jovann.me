@@ -1,6 +1,7 @@
+# THIS IS STILL WIP AND IN A COMPLETELY UNFINISHED STATE.
 # jovann.me
 
-A personal website for JovannMC.
+A personal website for me, JovannMC.
 
 ## Description
 
