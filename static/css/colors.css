@@ -1,0 +1,51 @@
+/* Background Colors */
+
+.bg-darker-gray {
+    background-color: #232323;
+}
+
+.bg-dark-gray {
+    background-color: #595959;
+}
+
+.bg-gray {
+    background-color: #C8C8C8;
+}
+
+.bg-light-gray {
+    background-color: #E2E2E2;
+}
+
+.bg-lighter-gray {
+    background-color: #FDFCFA;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+/* Text Colors */
+
+.text-darker-gray {
+    color: #232323;
+}
+
+.text-dark-gray {
+    color: #595959;
+}
+
+.text-gray {
+    color: #C8C8C8;
+}
+
+.text-light-gray {
+    color: #E2E2E2;
+}
+
+.text-lighter-gray {
+    color: #FDFCFA;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
