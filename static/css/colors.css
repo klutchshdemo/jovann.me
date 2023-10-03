@@ -1,7 +1,11 @@
 /* Background Colors */
 
-.bg-darker-gray {
+.bg-darkest-gray {
     background-color: #232323;
+}
+
+.bg-darker-gray {
+    background-color: #323232;
 }
 
 .bg-dark-gray {
@@ -26,8 +30,12 @@
 
 /* Text Colors */
 
-.text-darker-gray {
+.text-darkest-gray {
     color: #232323;
+}
+
+.text-darker-gray {
+    color: #323232;
 }
 
 .text-dark-gray {
