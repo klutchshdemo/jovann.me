@@ -28,7 +28,7 @@
     background-color: #FFFFFF;
 }
 
-/* Text Colors */
+/* Text Colours */
 
 .text-darkest-gray {
     color: #232323;
@@ -56,4 +56,34 @@
 
 .text-white {
     color: #FFFFFF;
+}
+
+/* Text Sizes */
+
+.text-xxs {
+    font-size: 14px;
+}
+
+.text-xs {
+    font-size: 16px;
+}
+
+.text-sm {
+    font-size: 18px;
+}
+
+.text-md {
+    font-size: 20px;
+}
+
+.text-lg {
+    font-size: 22px;
+}
+
+.text-xl {
+    font-size: 24px;
+}
+
+.text-xxl {
+    font-size: 50px;
 }

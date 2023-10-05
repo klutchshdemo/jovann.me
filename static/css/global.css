@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-@import url("colors.css");
+@import url("formatting.css");
 @import url("components.css");
 
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: 'Open Sans', sans-serif;
+}
+
+.caption {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: -37px;
+    transform: translateY(-50%);
+    padding: 10px 30px;
+    text-align: center;
 }
 
 /* Navbar */
 
 .navbar {
+    position: relative;
     background-color: #232323;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
@@ -49,6 +62,7 @@ body {
 /* Footer */
 
 .footer {
+    position: relative;
     background-color: #232323;
     width: 100%;
     height: 200px;
@@ -58,6 +72,7 @@ body {
 }
 
 .section {
+    position: relative;
     width: 100%;
     height: 779px;
 }
