@@ -85,5 +85,23 @@
 }
 
 .text-xxl {
+    font-size: 40px;
+}
+
+.text-xxxl {
     font-size: 50px;
+}
+
+/* Alignment */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
