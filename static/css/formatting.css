@@ -105,3 +105,53 @@
 .text-right {
     text-align: right;
 }
+
+/* Padding */
+
+.padding-xs {
+    padding: 8px;
+}
+
+.padding-sm {
+    padding: 16px;
+}
+
+.padding-md {
+    padding: 24px;
+}
+
+.padding-lg {
+    padding: 28px;
+}
+
+.padding-xl {
+    padding: 32px;
+}
+
+/* Margin */
+
+.margin-sm {
+    margin: 16px;
+}
+
+.margin-md {
+    margin: 24px;
+}
+
+.margin-lg {
+    margin: 36px;
+}
+
+/* Gap */
+
+.gap-16 {
+    margin-bottom: 16px;
+}
+
+.gap-24 {
+    margin-bottom: 24px;
+}
+
+.gap-36 {
+    margin-bottom: 36px;
+}
