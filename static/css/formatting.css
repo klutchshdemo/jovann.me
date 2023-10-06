@@ -1,3 +1,10 @@
+/* 
+    * Format for HTML elements:
+    * BACKGROUND COLOR - TEXT COLOR - TEXT SIZE - TEXT WEIGHT - TEXT ALIGNMENT - PADDING - MARGIN - GAP
+    <div class="bg-darkest-gray text-white text-xxl text-bold text-center padding-md margin-md gap-md"></div>
+*/
+*/
+
 /* Background Colors */
 
 .bg-darkest-gray {
@@ -92,7 +99,21 @@
     font-size: 50px;
 }
 
-/* Alignment */
+/* Text Weights */
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-bolder {
+    font-weight: 800;
+}
+
+/* Text Alignment */
 
 .text-left {
     text-align: left;
@@ -130,6 +151,10 @@
 
 /* Margin */
 
+.margin-xs {
+    margin: 8px;
+}
+
 .margin-sm {
     margin: 16px;
 }
@@ -144,14 +169,14 @@
 
 /* Gap */
 
-.gap-16 {
+.gap-sm {
     margin-bottom: 16px;
 }
 
-.gap-24 {
+.gap-md {
     margin-bottom: 24px;
 }
 
-.gap-36 {
+.gap-lg {
     margin-bottom: 36px;
 }

@@ -8,3 +8,36 @@
     width: 140px;
     height: 50px;
 }
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card .card-image {
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem;
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.card .card-content {
+    width: 100%;
+    height: 30%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+}
