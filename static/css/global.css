@@ -1,3 +1,4 @@
+/* TODO: Add responsiveness */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import url("formatting.css");
 @import url("components.css");
@@ -18,6 +19,12 @@ body {
     transform: translateY(-50%);
     padding: 10px 30px;
     text-align: center;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 /* Navbar */
@@ -131,7 +138,99 @@ body {
     background-color: #232323;
     width: 100%;
     height: 200px;
+    padding: 36px 0;
+}
+
+.footer .footer-container {
+    width: 80%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: auto;
+}
+
+.footer .footer-container .footer-about {
+    width: 250px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.footer .footer-container .footer-about .footer-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.footer .footer-container .footer-about .footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer .footer-container .footer-about .footer-text {
+    width: 100%;
+    height: 100%;
+}
+
+.footer .footer-container .footer-links {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .footer-container .footer-links .links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.footer .footer-container .footer-links .footer-link {
+    text-decoration: none;
+}
+
+.footer .footer-container .footer-socials {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .footer-container .footer-socials .socials {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer .footer-container .footer-socials .socials a {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-container .footer-socials .socials a img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
 }
