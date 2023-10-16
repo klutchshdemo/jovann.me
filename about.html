@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>jovann.me</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/about.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Favicons -->
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="/static/images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/static/images/favicons/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicons/favicon.ico">
+
+    <!-- SEO -->
+    <meta name="description" content="The personal site for JovannMC">
+    <meta name="keywords" content="JovannMC, personal, personal website, projects">
+    <meta name="author" content="JovannMC">
+    
+    <!-- Open Graph Tags -->
+    <meta content="jovann.me" property="og:title"/>
+    <meta content="The personal site for JovannMC" propegitrty="og:description"/>
+    <meta content="https://jovann.me" property="og:url"/>
+    <meta content="https://jovann.me/static/images/jovannmc.png" property="og:image"/>
+    <meta content="#232323" data-react-helmet="true" name="theme-color"/>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="/">
+                <img src="/static/images/jovannmc transparent.png" alt="JovannMC" class="navbar__logo__image">
+            </a>
+        </div>
+        <div class="navbar-links">
+            <a href="/" class="text-white">Home</a>
+            <a href="/about" class="text-gray">About</a>
+            <a href="/videos" class="text-gray">Videos</a>
+            <a href="/contact" class="text-gray">Contact</a>
+            <a href="/projects" class="button bg-light-gray text-darker-gray">Projects</a>
+        </div>
+    </nav>
+
+    <!-- Who? -->
+    <section class="section bg-darker-gray">
+        <h1 class="section-title text-light-gray text-xxl text-bold">Who?</h1>
+        <div class="section-content">
+            <div class="section-container">
+                <div class="section-image">
+                    <img src="/static/images/jovannmc.png" alt="Logo of JovannMC">
+                </div>
+                <div class="section-text">
+                    <p class="text-light-gray text-lg">
+                        Hey! I'm Jovann, aka JovannMC online. I'm a 14 year old from the Philippines who grew up with and loves technology and the internet.<br>
+                        <br>
+                        I love hanging out with friends and doing stuff together, playing games, making people happy, content creation, and getting programming work done.<br>
+                        <br>
+                        I have some experience with Java for SpigotMC, C# for Unity, and HTML/CSS/JS for web development. I also have some experience with creating thumbnails and video editing, and currently self-host numerous services on my alternate domain, <a href="https://femboyfurry.net">femboyfurry.net</a>. Most of my projects are open-sourced, so head to the <projects> page to check them out!
+                    </p>
+                </div>
+            </div>
+            <div class="padding-xxl"></div>
+        </div>
+    </section>
+
+    <!-- What? -->
+    <section class="section bg-dark-gray">
+        <h1 class="section-title text-light-gray text-xxl text-bold">What?</h1>
+        <div class="section-content">
+            <div class="section-container">
+                <div class="what-list">
+                    <div class="what-list-item">
+                        <div class="what-list-item-image">
+                            <img src="/static/images/jovannmc.png" alt="Content creation">
+                        </div>
+                        <div class="what-list-item-text">
+                            <p class="text-light-gray text-lg text-bold">Content creation</p>
+                            <p class="text-light-gray text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                        </div>
+                    </div>
+                    <div class="what-list-item">
+                        <div class="what-list-item-image">
+                            <img src="/static/images/jovannmc.png" alt="Development">
+                        </div>
+                        <div class="what-list-item-text">
+                            <p class="text-light-gray text-lg text-bold">Development</p>
+                            <p class="text-light-gray text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                        </div>
+                    </div>
+                    <div class="what-list-item">
+                        <div class="what-list-item-image">
+                            <img src="/static/images/jovannmc.png" alt="Self-hosted services">
+                        </div>
+                        <div class="what-list-item-text">
+                            <p class="text-light-gray text-lg text-bold">Self-hosted services</p>
+                            <p class="text-light-gray text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/projects" class="button bg-light-gray text-darkest-gray text-sm text-bold margin-lg">Projects</a>
+        </div>
+    </section>
+
+    <!-- When? -->
+    <section class="section bg-darker-gray">
+        <h1 class="section-title text-light-gray text-xxl text-bold">When?</h1>
+        <p class="section-subtitle text-light-gray text-sm">Timeline of my tech adventure, from a youngling to now!</p>
+        <div class="section-content">
+            <div class="section-container">
+                
+            </div>
+            <div class="padding-xxl"></div>
+        </div>
+    </section>
+
+    <!-- Where? -->
+    <section class="section bg-dark-gray">
+        <h1 class="section-title text-light-gray text-xxl text-bold">Where?</h1>
+        <p class="section-subtitle text-light-gray text-sm">
+            You can find me active on many platforms and social medias, from video sharing to communication platforms.<br>
+            Head over to the contact page to find them!
+        </p>
+        <a href="/contact" class="button bg-light-gray text-darkest-gray text-sm text-bold margin-lg">Contact</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="/static/images/jovannmc transparent.png" alt="JovannMC">
+                </div>
+                <p class="footer-text text-light-gray text-xs">Hey, thanks for scrolling to the end of the page. The site is <a class="text-gray" href="https://github.com/JovannMC/jovann.me">open source</a>, maybe check it out?</p>
+            </div>
+            <div class="footer-links">
+                <p class="text-white text-md">Playlists</p>
+                <div class="links">
+                    <a href="/" class="footer-link text-gray text-xs">Home</a>
+                    <a href="/about" class="footer-link text-gray text-xs">About</a>
+                    <a href="/videos" class="footer-link text-gray text-xs">Videos</a>
+                    <a href="/contact" class="footer-link text-gray text-xs">Contact</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <p class="text-white text-md">Cool links</p>
+                <div class="links">
+                    <a href="/" class="footer-link text-gray text-xs">Home</a>
+                    <a href="/about" class="footer-link text-gray text-xs">About</a>
+                    <a href="/videos" class="footer-link text-gray text-xs">Videos</a>
+                    <a href="/contact" class="footer-link text-gray text-xs">Contact</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <!-- lmao i can't figure this out, so this works -->
+                <p class="text-darkest-gray text-md prevent-select">Cool links</p>
+                <div class="links">
+                    <a href="/" class="footer-link text-gray text-xs">Home</a>
+                    <a href="/about" class="footer-link text-gray text-xs">About</a>
+                    <a href="/videos" class="footer-link text-gray text-xs">Videos</a>
+                    <a href="/contact" class="footer-link text-gray text-xs">Contact</a>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <p class="text-white text-md">Socials</p>
+                <div class="socials">
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+          $('.carousel').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+            dots: false,
+          });
+        });
+      </script>
+      
+</body>
+
+</html>

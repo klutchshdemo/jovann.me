@@ -149,6 +149,10 @@
     padding: 32px;
 }
 
+.padding-xxl {
+    padding: 36px;
+}
+
 /* Margin */
 
 .margin-xs {
