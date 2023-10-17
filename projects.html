@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Projects | jovann.me</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/global.css">
+
+    <!-- Favicons -->
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="/static/images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/static/images/favicons/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicons/favicon.ico">
+
+    <!-- SEO -->
+    <meta name="description" content="The personal site for JovannMC">
+    <meta name="keywords" content="JovannMC, personal, personal website, projects">
+    <meta name="author" content="JovannMC">
+    
+    <!-- Open Graph Tags -->
+    <meta content="jovann.me" property="og:title"/>
+    <meta content="The personal site for JovannMC" propegitrty="og:description"/>
+    <meta content="https://jovann.me" property="og:url"/>
+    <meta content="https://jovann.me/static/images/jovannmc.png" property="og:image"/>
+    <meta content="#232323" data-react-helmet="true" name="theme-color"/>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="/">
+                <img src="/static/images/jovannmc transparent.png" alt="JovannMC" class="navbar__logo__image">
+            </a>
+        </div>
+        <div class="navbar-links">
+            <a href="/" class="text-gray">Home</a>
+            <a href="/about.html" class="text-gray">About</a>
+            <a href="/videos.html" class="text-gray">Videos</a>
+            <a href="/contact.html" class="text-gray">Contact</a>
+            <a href="/projects.html" class="button bg-light-gray text-darker-gray">Projects</a>
+        </div>
+    </nav>
+
+    <!-- Projects -->
+    <section class="section bg-darker-gray">
+        <h1 class="section-title text-light-gray text-xxl text-bold">Projects</h1>
+        <div class="section-content">
+            <div class="section-container">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="/static/images/jovannmc transparent.png" alt="JovannMC">
+                </div>
+                <p class="footer-text text-light-gray text-xs">Hey, thanks for scrolling to the end of the page. The site is <a class="text-gray" href="https://github.com/JovannMC/jovann.me">open source</a>, maybe check it out?</p>
+            </div>
+            <div class="footer-links">
+                <p class="text-white text-md">Playlists</p>
+                <div class="links">
+                    <a href="/" class="footer-link text-gray text-xs">Home</a>
+                    <a href="/about.html" class="footer-link text-gray text-xs">About</a>
+                    <a href="/videos.html" class="footer-link text-gray text-xs">Videos</a>
+                    <a href="/contact.html" class="footer-link text-gray text-xs">Contact</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <p class="text-white text-md">Cool links</p>
+                <div class="links">
+                    <a href="/" class="footer-link text-gray text-xs">Home</a>
+                    <a href="/about.html" class="footer-link text-gray text-xs">About</a>
+                    <a href="/videos.html" class="footer-link text-gray text-xs">Videos</a>
+                    <a href="/contact.html" class="footer-link text-gray text-xs">Contact</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <!-- lmao i can't figure this out, so this works -->
+                <p class="text-darkest-gray text-md prevent-select">Cool links</p>
+                <div class="links">
+                    <a href="/" class="footer-link text-gray text-xs">Home</a>
+                    <a href="/about.html" class="footer-link text-gray text-xs">About</a>
+                    <a href="/videos.html" class="footer-link text-gray text-xs">Videos</a>
+                    <a href="/contact.html" class="footer-link text-gray text-xs">Contact</a>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <p class="text-white text-md">Socials</p>
+                <div class="socials">
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                    <a href="/" class="bg-gray text-gray text-xs">
+                        <img src="/static/images/socials/discord.svg" alt="Discord">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+          $('.carousel').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+            dots: false,
+          });
+        });
+      </script>
+      
+</body>
+
+</html>
