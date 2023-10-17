@@ -67,15 +67,18 @@
 
 .hovercard {
     display: none;
-    position: absolute;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    width: 150px;
+    width: max-content;
     z-index: 1;
-    transform: translateY(125%);
+    white-space: nowrap;
 }
 
-.circle:hover .hovercard {
+.circle:hover + .hovercard {
     display: block;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
 }
