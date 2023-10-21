@@ -3,7 +3,6 @@
     * BACKGROUND COLOR - TEXT COLOR - TEXT SIZE - TEXT WEIGHT - TEXT ALIGNMENT - PADDING - MARGIN - GAP
     <div class="bg-darkest-gray text-white text-xxl text-bold text-center padding-md margin-md gap-md"></div>
 */
-*/
 
 /* Background Colors */
 
@@ -183,4 +182,21 @@
 
 .gap-lg {
     margin-bottom: 36px;
+}
+
+/* Flexbox */
+
+.flex-row {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.flex-center {
+    align-items: center !important;
+    justify-content: center !important;
 }
