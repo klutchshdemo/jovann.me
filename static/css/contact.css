@@ -1,5 +1,21 @@
 @import url("global.css");
 
+.social-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 48px;
+}
+
+.social-container .social-category {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .social-links {
     display: flex;
     align-items: center;
