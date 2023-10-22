@@ -138,8 +138,7 @@ a:hover {
     position: relative;
     background-color: #232323;
     width: 100%;
-    height: 200px;
-    padding: 36px 0;
+    height: 300px;
 }
 
 .footer .footer-container {
@@ -147,15 +146,14 @@ a:hover {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 100px;
+    justify-content: space-between;
     margin: auto;
+    gap: 48px;
 }
 
 .footer .footer-container .footer-about {
     width: 250px;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
     gap: 36px;
 }
@@ -178,22 +176,10 @@ a:hover {
 
 .footer .footer-container .footer-links {
     width: 200px;
-    height: 100%;
+    height: 250px;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}
-
-.footer .footer-container .footer-links .links {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
+    justify-content: space-evenly;
 }
 
 .footer .footer-container .footer-links .footer-link {
@@ -204,7 +190,6 @@ a:hover {
     width: 200px;
     height: 100%;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     gap: 20px;

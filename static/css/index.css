@@ -1,11 +1,14 @@
 @import url("global.css");
-.index-section {
+
+/* Landing */
+
+.landing-section {
     width: 100%;
     height: 750px;
     display: flex;
 }
 
-.index-section .index-intro {
+.landing-section .landing-intro {
     position: relative;
     width: 45%;
     height: 100%;
@@ -16,23 +19,25 @@
     gap: 10px;
 }
 
-.index-section .index-intro h1 {
+.landing-section .landing-intro h1 {
     margin-left: 10%;
     margin-bottom: -10px;
 }
 
-.index-section .index-intro p, .index-section .index-intro a {
+.landing-section .landing-intro p, .landing-section .landing-intro a {
     margin-top: 20px;
     margin-left: 10%;
     margin-right: 25%;
 }
 
-.index-section .index-carousel {
+/* Landing carousel */
+
+.landing-section .landing-carousel {
     width: 55%;
     height: 100%;
 }
 
-.index-section .index-carousel .carousel {
+.landing-section .landing-carousel .carousel {
     width: 100%;
     height: 100%;
     display: flex;
@@ -40,30 +45,17 @@
     align-items: center;
 }
 
-.index-section .index-carousel .carousel .carousel-item {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.index-section .index-carousel .carousel .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Carousel */
-
-.index-section .index-carousel .carousel .carousel-item {
+.landing-section .landing-carousel .carousel .carousel-item {
     width: 100%;
     height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     object-fit: cover;
 }
 
-.index-section .index-carousel .carousel .carousel-item img {
-    max-width: 100%;
-    max-height: 100%;
+.landing-section .landing-carousel .carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }

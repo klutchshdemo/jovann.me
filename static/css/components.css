@@ -74,37 +74,3 @@
     width: 100%;
     height: 100%;
 }
-
-/*
-.list .list-cards {
-    display: flex;
-    align-items: center;
-    justify-content: column;
-    gap: 20px;
-}
-
-.list .list-cards .list-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 1rem;
-}
-
-.list .list-cards .list-card .card-image {
-    width: 50%;
-    height: 30%;
-}
-
-.list .list-cards .list-card .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.list .list-cards .list-card .card-content {
-    text-align: start;
-    width: 100%;
-    height: 30%;
-}
-*/
