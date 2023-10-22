@@ -186,7 +186,7 @@ a:hover {
     text-decoration: none;
 }
 
-.footer .footer-container .footer-socials {
+.footer .footer-container .socials-container {
     width: 200px;
     height: 100%;
     display: flex;
@@ -195,7 +195,7 @@ a:hover {
     gap: 20px;
 }
 
-.footer .footer-container .footer-socials .socials {
+.footer .footer-container .socials-container .socials {
     width: 100%;
     height: auto;
     display: flex;
@@ -203,7 +203,7 @@ a:hover {
     gap: 20px;
 }
 
-.footer .footer-container .footer-socials .socials a {
+.footer .footer-container .socials-container .socials a {
     min-width: 40px;
     min-height: 40px;
     max-width: 40px;
@@ -215,7 +215,7 @@ a:hover {
     justify-content: center;
 }
 
-.footer .footer-container .footer-socials .socials a img {
+.footer .footer-container .socials-container .socials a img {
     width: 80%;
     height: 80%;
     object-fit: cover;
