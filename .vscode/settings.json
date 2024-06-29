@@ -116,5 +116,10 @@
 		"transition",
 		"width",
 		"zIndex"
+	],
+	"cSpell.words": [
+		"favicons",
+		"skeletonlabs",
+		"wordmark"
 	]
 }
