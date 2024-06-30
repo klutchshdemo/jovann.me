@@ -52,8 +52,8 @@
 		</div>
 
 		<div class="mt-4 flex justify-between items-center border-t pt-4 border-gray-700 text-xs md:text-base">
-			<p class="md:w-auto w-1/2 text-left">&copy; 2024 JovannMC. All rights reserved. All wrongs not reserved.</p>
-			<p class="md:w-auto w-3/4 text-right">This site is under the <a href="https://opensource.org/license/MIT" class="text-blue-400">MIT License</a>.</p>
+			<p class="md:w-auto w-2/4 text-left">&copy; 2024 JovannMC. All rights reserved. All wrongs not reserved.</p>
+			<p class="md:w-auto w-3/4 text-right">This site is under<br class="md:hidden">the <a href="https://opensource.org/license/MIT" class="text-blue-400">MIT License</a>.</p>
 		</div>
 	</div>
 </footer>
