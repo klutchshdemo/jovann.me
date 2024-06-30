@@ -3,6 +3,8 @@
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import { slide } from 'svelte/transition';
 
+	import Footer from '../components/footer.svelte';
+
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
 	import 'highlight.js/styles/github-dark.css';
@@ -49,7 +51,7 @@
 	<meta content="jovann.me" property="og:title" />
 	<meta content="Personal website/portfolio of JovannMC" property="og:description" />
 	<meta content="https://jovann.me" property="og:url" />
-	<meta content="https://jovann.me/CHANGEME" property="og:image" />
+	<meta content="https://jovann.me/images/jovannmc_white.png" property="og:image" />
 	<meta content="#222222" data-react-helmet="true" name="theme-color" />
 </svelte:head>
 
@@ -60,15 +62,15 @@
 		<AppBar>
 			<svelte:fragment slot="lead">
 				<!-- Hamburger menu -->
-				<button class="mr-4" on:click={toggleMenu}>
-					<svg class="md:hidden h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<button class="md:hidden mr-4 cursor-pointer h-8 w-8" on:click={toggleMenu}>
+					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
 					</svg>
 				</button>
-				<img class="h-8" src="/images/jovannmc_white_wordmark.png" alt="JovannMC wordmark logo" />
+				<img class="h-9" src="/images/jovannmc_white_wordmark.png" alt="JovannMC wordmark logo" />
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<div class="hidden md:flex gap-6 items-center">
+				<div class="hidden md:flex gap-8 items-center">
 					<a href="/"> Home </a>
 					<a href="/videos"> Videos </a>
 					<a href="/contact"> Contact </a>
@@ -81,13 +83,12 @@
 	<!-- Hamburger menu contents -->
 	<div class="md:hidden" class:open={menuOpen}>
 		{#if menuOpen}
-			<div transition:slide={{ duration: 300 }}>
-				<div class="flex flex-col justify-center items-center bg-surface shadow-lg p-4">
+			<div transition:slide={{ duration: 300 }} class="absolute top-16 left-0 w-full">
+				<div class="flex flex-col gap-1 justify-center items-center bg-surface-900 shadow-lg px-4 py-2 z-10">
 					<a href="/" class="w-full text-center block py-2"> Home </a>
 					<a href="/videos" class="w-full text-center block py-2"> Videos </a>
 					<a href="/contact" class="w-full text-center block py-2"> Contact </a>
-					<!-- Adjust the class for "Projects" to match the text size of the other links -->
-					<a href="/projects" class="btn w-full text-center block py-2"> Projects </a>
+					<a href="/projects" class="btn w-full text-center block py-2 mb-2"> Projects </a>
 				</div>
 			</div>
 		{/if}
@@ -95,4 +96,12 @@
 
 	<!-- Main content -->
 	<slot />
+
+	<Footer />
 </AppShell>
+
+<style>
+	:root {
+		--navbar-height: 68px;
+	}
+</style>
