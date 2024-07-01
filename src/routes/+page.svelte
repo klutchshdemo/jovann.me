@@ -1,13 +1,44 @@
+<script>
+	import { onMount } from 'svelte';
+	import TypeIt from 'typeit';
+
+	onMount(() => {
+		const phrases = [
+			{ text: 'hates', deleteAfter: 150, typeAfter: 200 },
+			{ text: 'loves technology', deleteAfter: 650, typeAfter: 650 },
+			{ text: 'creates content', deleteAfter: 650, typeAfter: 650 },
+			{ text: 'sucks at programming', deleteAfter: 650, typeAfter: 650 }
+		];
+
+		const typeItInstance = new TypeIt('#typewriter', {
+			lifeLike: false,
+			speed: 80,
+			deleteSpeed: 40,
+			loop: true,
+			loopDelay: 650
+		});
+
+		phrases.forEach(({ text, deleteAfter, typeAfter }) => {
+			typeItInstance.type(text).pause(deleteAfter).delete(text.length).pause(typeAfter);
+		});
+
+		typeItInstance.go();
+	});
+</script>
+
 <div
 	class="container mx-auto flex flex-col justify-center items-center"
 	style="min-height: calc(100vh - var(--navbar-height));"
 >
 	<div class="text-center w-full md:w-5/12">
 		<h1 class="text-4xl font-bold">Hey!</h1>
-		<!-- TODO: use typewriter effect to go through these -->
 		<p class="text-xl mt-2">
-			I'm <b>JovannMC</b>. I'm just another person that loves (and hates) <b>technology</b>, sometimes creates
-			<b>content</b>, and sucks at <b>programming</b>.
+			I'm <b>JovannMC</b>. I'm just another person that <span class="font-bold" id="typewriter"></span>.
+			<!-- No JS -->
+			<noscript
+				><del>hates</del> loves <b>technology</b>, creates <b>content</b>, and sucks at
+				<b>programming</b>.</noscript
+			>
 		</p>
 	</div>
 </div>
