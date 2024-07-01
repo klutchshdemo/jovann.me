@@ -1,38 +1,24 @@
-# create-svelte
+# THIS IS STILL WIP AND IN A COMPLETELY UNFINISHED STATE.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+# jovann.me
 
-## Creating a project
+A personal website for me, JovannMC.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Description
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Welcome to my website's repositiory, which is hosted at https://jovann.me!<br>
+This is my personal website, where you can find info about me and my projects.<br>
+Here you can explore the code and roast my trash code!<br>
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Contribution
 
-## Developing
+If you want to contribute, please make sure to follow GitHub's [Community Guidelines](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines) and [Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).<br>
+If you have followed all of them, you can make a pull request [here](https://github.com/JovannMC/jovann.me/pulls).
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## License
 
-```bash
-npm run dev
+This project is licensed under the [MIT](https://opensource.org/license/MIT/) License - see the [LICENSE](LICENSE) file for details<br>
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Acknowledgments
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- None
