@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import TypeIt from 'typeit';
 
@@ -31,19 +31,27 @@
 	});
 </script>
 
-<div class="flex flex-col justify-center items-center" style="min-height: calc(100vh - var(--navbar-height));">
-	<div class="text-center w-10/12 md:w-1/2">
-		<h1 class="text-4xl font-bold">Hey!</h1>
-		<p class="text-xl mt-2">
-			I'm <b>JovannMC</b>. I'm just another person that <span class="font-bold" id="typewriter"></span>.
-			<!-- No JS -->
-			<noscript
-				><del>hates</del> loves <b>technology</b>, creates <b>content</b>, and sucks at
-				<b>programming</b>.</noscript
-			>
-		</p>
+<section class="content">
+	<div class="flex flex-col justify-center items-center" style="min-height: calc(100vh - var(--navbar-height));">
+		<div class="text-center w-10/12 md:w-1/2">
+			<h1 class="text-4xl font-bold">Hey!</h1>
+			<p class="text-xl mt-2">
+				I'm <b>JovannMC</b>. I'm just another person that <span class="font-bold" id="typewriter"></span>.
+				<!-- No JS -->
+				<noscript
+					><del>hates</del> loves <b>technology</b>, creates <b>content</b>, and sucks at
+					<b>programming</b>.</noscript
+				>
+			</p>
+		</div>
 	</div>
-</div>
+
+	<div class="scroll-indicator">
+		<svg class="w-7 h-7 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+		</svg>
+	</div>
+</section>
 
 <!-- About Me Section -->
 <Container title="A little about me..">
@@ -93,7 +101,7 @@
 			footer="Software"
 		/>
 	</div>
-	<ActionButton text="Projects" href="/projects"/>
+	<ActionButton text="Projects" href="/projects" />
 </Container>
 
 <Container title="Featured Videos">
@@ -122,5 +130,19 @@
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
 		aliqua.
 	</p>
-	<ActionButton text="Contact" href="/contact"/>
+	<ActionButton text="Contact" href="/contact" />
 </Container>
+
+<style>
+	.content {
+		position: relative;
+		overflow: hidden;
+	}
+	.scroll-indicator {
+		position: absolute;
+		bottom: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 10;
+	}
+</style>
