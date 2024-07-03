@@ -3,7 +3,7 @@
 
 	export let src = '';
 
-    // Width and height take rem units
+	// Width and height take rem units
 	export let width = '';
 	export let height = '';
 	export let aspectRatio = '';
@@ -50,6 +50,7 @@
 <div
 	class={`image-container relative overflow-hidden rounded-lg ${!transparent ? 'bg-surface-400' : ''} ${loading ? 'animate-pulse' : ''}`}
 	style={`width: ${computedWidth}; height: ${computedHeight};`}
+	tabindex="-1"
 >
 	<div
 		class="image-content"
@@ -63,7 +64,9 @@
 	.image-content {
 		background-size: cover;
 		background-position: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 		transform: scale(1);
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	}
@@ -71,7 +74,10 @@
 		display: block;
 	}
 
-    .image-container:hover {
+	.image-container:hover,
+	.image-container:active,
+	.image-container:focus {
+		/* Added for touch devices, ensure your elements are focusable */
 		transform: scale(1.05);
 		box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 	}
