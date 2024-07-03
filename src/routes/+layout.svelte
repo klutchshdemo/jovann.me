@@ -5,6 +5,7 @@
 
 	import Footer from '../components/Footer.svelte';
 
+	// TODO: remove this probably, unused
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
 	import 'highlight.js/styles/github-dark.css';
@@ -97,6 +98,7 @@
 	<!-- Main content -->
 	<slot />
 
+	<!-- Footer -->
 	<Footer />
 </AppShell>
 

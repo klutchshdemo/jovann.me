@@ -5,6 +5,7 @@
 	import Container from '../components/Container.svelte';
 	import Card from '../components/Card.svelte';
 	import ActionButton from '../components/ActionButton.svelte';
+	import ImageCard from '../components/ImageCard.svelte';
 
 	onMount(() => {
 		const phrases = [
@@ -54,10 +55,10 @@
 	<div class="flex flex-col lg:flex-row items-center justify-center md:gap-16">
 		<!-- Image placeholders -->
 		<div class="grid grid-cols-2 gap-4">
-			<div class="w-24 h-24 md:w-40 md:h-40 bg-surface-400 rounded-lg"></div>
-			<div class="w-24 h-24 md:w-40 md:h-40 bg-surface-400 rounded-lg"></div>
-			<div class="w-24 h-24 md:w-40 md:h-40 bg-surface-400 rounded-lg"></div>
-			<div class="w-24 h-24 md:w-40 md:h-40 bg-surface-400 rounded-lg"></div>
+			<ImageCard aspectRatio="1:1" loading={true} />
+			<ImageCard aspectRatio="1:1" loading={true} />
+			<ImageCard aspectRatio="1:1" loading={true} />
+			<ImageCard aspectRatio="1:1" loading={true} />
 		</div>
 		<div class="mt-6 lg:mt-0 text-center lg:text-left">
 			<ul class="flex flex-col list-disc list-inside text-xl gap-y-4">
@@ -72,7 +73,6 @@
 			</ul>
 		</div>
 	</div>
-	<ActionButton text="About me" />
 </Container>
 
 <Container title="Featured Projects">
@@ -93,7 +93,7 @@
 			footer="Software"
 		/>
 	</div>
-	<ActionButton text="Projects" />
+	<ActionButton text="Projects" href="/projects"/>
 </Container>
 
 <Container title="Featured Videos">
@@ -114,7 +114,7 @@
 			footer="September 23, 2023"
 		/>
 	</div>
-	<ActionButton text="Videos" />
+	<ActionButton text="Videos" href="/videos" />
 </Container>
 
 <Container title="Contact">
@@ -122,5 +122,5 @@
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
 		aliqua.
 	</p>
-	<ActionButton text="Contact" />
+	<ActionButton text="Contact" href="/contact"/>
 </Container>
