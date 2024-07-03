@@ -53,7 +53,9 @@
 	</div>
 </section>
 
-<!-- About Me Section -->
+<!-- TODO: add fade in scrolling effect? -->
+
+<!-- About me Section -->
 <Container title="A little about me..">
 	<p class="text-xl text-center mb-6">
 		I'm a 15 year old from the Philippines that grew up with technology, gaming, and the internet at a young age. I love
@@ -83,6 +85,7 @@
 	</div>
 </Container>
 
+<!-- Featured projects section -->
 <Container title="Featured Projects">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 		<Card
@@ -104,6 +107,7 @@
 	<ActionButton text="Projects" href="/projects" />
 </Container>
 
+<!-- Featured videos section -->
 <Container title="Featured Videos">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 		<Card
@@ -125,6 +129,7 @@
 	<ActionButton text="Videos" href="/videos" />
 </Container>
 
+<!-- Contact section -->
 <Container title="Contact">
 	<p class="text-xl text-center mb-6">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
