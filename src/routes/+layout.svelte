@@ -3,7 +3,7 @@
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import { slide } from 'svelte/transition';
 
-	import Footer from '../components/footer.svelte';
+	import Footer from '../components/Footer.svelte';
 
 	// Highlight JS
 	import hljs from 'highlight.js/lib/core';
