@@ -4,16 +4,17 @@
 
 	import Container from '../components/Container.svelte';
 	import Card from '../components/Card.svelte';
-	import ActionButton from '../components/ActionButton.svelte';
 	import CardImage from '../components/CardImage.svelte';
+	import ActionButton from '../components/ActionButton.svelte';
 
 	onMount(() => {
 		const phrases = [
 			{ text: 'hates', deleteAfter: 150, typeAfter: 200 },
 			{ text: 'loves technology', deleteAfter: 650, typeAfter: 650 },
 			{ text: 'creates content', deleteAfter: 650, typeAfter: 650 },
-			{ text: 'sucks at programming', deleteAfter: 650, typeAfter: 650 }
-		];
+			{ text: 'sucks at programming', deleteAfter: 650, typeAfter: 650 },
+			{ text: 'is gay af', deleteAfter: 80, typeAfter: 350 },
+			];
 
 		const typeItInstance = new TypeIt('#typewriter', {
 			lifeLike: false,
