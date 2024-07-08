@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { afterNavigate } from '$app/navigation';
 	import { slide } from 'svelte/transition';
 
 	import Footer from '../components/Footer.svelte';
@@ -10,6 +11,13 @@
 	function toggleMenu() {
 		menuOpen = !menuOpen;
 	}
+
+	// Fixes sveltekit issue w/ scroll restoration on navigation
+	let container: HTMLElement;
+
+	afterNavigate(() => {
+		container.scrollTo(0, 0);
+	});
 </script>
 
 <svelte:head>
