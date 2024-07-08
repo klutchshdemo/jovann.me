@@ -1,10 +1,12 @@
 <script>
 	const socialLinks = [
+		{ name: 'Email', url: '/images/socials/email.svg', link: 'mailto:jovannmc@femboyfurry.net'},
 		{ name: 'Discord', url: '/images/socials/discord.svg', link: 'https://discord.com/invite/fPrjXeN9fe' },
 		{ name: 'Matrix', url: '/images/socials/matrix.svg', link: 'https://matrix.to/#/@jovannmc:tchncs.de' },
-		{ name: 'GitHub', url: '/images/socials/github.svg', link: 'https://github.com/JovannMC' },
 		{ name: 'Twitter', url: '/images/socials/twitter.svg', link: 'https://twitter.com/JovannMC' },
 		{ name: 'Mastodon', url: '/images/socials/mastodon.svg', link: 'https://mastodon.femboyfurry.net/@JovannMC' },
+		{ name: 'Bluesky', url: '/images/socials/bluesky.svg', link: 'https://bsky.app/profile/femboyfurry.net' },
+		{ name: 'GitHub', url: '/images/socials/github.svg', link: 'https://github.com/JovannMC' },
 		{ name: 'YouTube', url: '/images/socials/youtube.svg', link: 'https://youtube.com/@JovannMC' },
 		{ name: 'Vanillo', url: '/images/socials/vanillo.svg', link: 'https://vanillo.tv/u/JovannMC' },
 		{ name: 'Twitch', url: '/images/socials/twitch.svg', link: 'https://twitch.tv/JovannMC' },
