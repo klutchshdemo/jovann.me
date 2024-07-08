@@ -2,12 +2,17 @@
 	export let title = '';
 	export let description = '';
 	export let footer = '';
+	export let thumbnail = '';
+	let isValidThumbnail = true;
 </script>
 
 <div class="card bg-surface-800 rounded-lg shadow-md overflow-hidden" tabindex="-1">
-	<div class="bg-surface-500 h-64">
-		<!-- Placeholder for thumbnail -->
-	</div>
+	{#if isValidThumbnail && thumbnail}
+		<img src={thumbnail} alt={title} class="h-64 object-cover w-full" on:error={() => (isValidThumbnail = false)} />
+	{:else}
+		<div class="bg-surface-500 h-64"></div>
+	{/if}
+
 	<div class="flex flex-col justify-between p-4 h-40">
 		<h3 class="text-xl font-bold mb-2">{title}</h3>
 		<p class="text-surface-300 mb-2">{description}</p>

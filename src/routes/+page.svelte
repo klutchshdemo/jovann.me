@@ -4,7 +4,7 @@
 
 	import Container from '../components/Container.svelte';
 	import Card from '../components/Card.svelte';
-	import CardImage from '../components/CardImage.svelte';
+	import ResponsiveImage from '../components/ResponsiveImage.svelte';
 	import ActionButton from '../components/ActionButton.svelte';
 
 	onMount(() => {
@@ -13,8 +13,8 @@
 			{ text: 'loves technology', deleteAfter: 650, typeAfter: 650 },
 			{ text: 'creates content', deleteAfter: 650, typeAfter: 650 },
 			{ text: 'sucks at programming', deleteAfter: 650, typeAfter: 650 },
-			{ text: 'is gay af', deleteAfter: 80, typeAfter: 350 },
-			];
+			{ text: 'is gay af', deleteAfter: 80, typeAfter: 350 }
+		];
 
 		const typeItInstance = new TypeIt('#typewriter', {
 			lifeLike: false,
@@ -66,10 +66,10 @@
 	<div class="flex flex-col lg:flex-row items-center justify-center lg:gap-16">
 		<!-- Image placeholders -->
 		<div class="grid grid-cols-2 gap-4">
-			<CardImage aspectRatio="1:1" loading={true} />
-			<CardImage aspectRatio="1:1" loading={true} />
-			<CardImage aspectRatio="1:1" loading={true} />
-			<CardImage aspectRatio="1:1" loading={true} />
+			<ResponsiveImage aspectRatio="1:1" loading={true} />
+			<ResponsiveImage aspectRatio="1:1" loading={true} />
+			<ResponsiveImage aspectRatio="1:1" loading={true} />
+			<ResponsiveImage aspectRatio="1:1" loading={true} />
 		</div>
 		<div class="mt-6 lg:mt-0 text-center lg:text-left">
 			<ul class="flex flex-col list-disc list-inside text-xl gap-y-4">
@@ -93,16 +93,19 @@
 			title="Project Title 1"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
 			footer="Software"
+			thumbnail="/images/projects/jovannillo.png"
 		/>
 		<Card
 			title="Project Title 2"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
 			footer="Software"
+			thumbnail="/images/projects/slimetora_icon.png"
 		/>
 		<Card
 			title="Project Title 3"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
 			footer="Software"
+			thumbnail="/images/projects/saladsim1.png"
 		/>
 	</div>
 	<ActionButton text="Projects" href="/projects" />
@@ -115,16 +118,19 @@
 			title="Video Title 1"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
 			footer="September 23, 2023"
+			thumbnail="/images/projects/joevan.png"
 		/>
 		<Card
 			title="Video Title 2"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
 			footer="September 23, 2023"
+			thumbnail="/images/projects/good speed.png"
 		/>
 		<Card
 			title="Video Title 3"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
 			footer="September 23, 2023"
+			thumbnail="/images/projects/joe biden good.jpg"
 		/>
 	</div>
 	<ActionButton text="Videos" href="/videos" />
@@ -139,7 +145,7 @@
 	<ActionButton text="Contact" href="/contact" />
 </Container>
 
-<br><br>
+<br /><br />
 
 <style>
 	.content {
