@@ -5,7 +5,7 @@
 	import Container from '../components/Container.svelte';
 	import Card from '../components/Card.svelte';
 	import ActionButton from '../components/ActionButton.svelte';
-	import ImageCard from '../components/ImageCard.svelte';
+	import CardImage from '../components/CardImage.svelte';
 
 	onMount(() => {
 		const phrases = [
@@ -33,7 +33,7 @@
 
 <section class="content">
 	<div class="flex flex-col justify-center items-center" style="min-height: calc(100vh - var(--navbar-height));">
-		<div class="text-center w-10/12 md:w-1/2">
+		<div class="text-center w-10/12 lg:w-1/2">
 			<h1 class="text-4xl font-bold">Hey!</h1>
 			<p class="text-xl mt-2">
 				I'm <b>JovannMC</b>. I'm just another person that <span class="font-bold" id="typewriter"></span>.
@@ -56,19 +56,19 @@
 <!-- TODO: add fade in scrolling effect? -->
 
 <!-- About me Section -->
-<Container title="A little about me..">
+<Container title="A little about me!">
 	<p class="text-xl text-center mb-6">
 		I'm a 15 year old from the Philippines that grew up with technology, gaming, and the internet at a young age. I love
 		learning new things, starting projects I never finish, and hanging out with friends (especially in VR)! I do content
 		creation, program stuff, and self-host random services on my "funny" project domain. Some of my "skills" are below!
 	</p>
-	<div class="flex flex-col lg:flex-row items-center justify-center md:gap-16">
+	<div class="flex flex-col lg:flex-row items-center justify-center lg:gap-16">
 		<!-- Image placeholders -->
 		<div class="grid grid-cols-2 gap-4">
-			<ImageCard aspectRatio="1:1" loading={true} />
-			<ImageCard aspectRatio="1:1" loading={true} />
-			<ImageCard aspectRatio="1:1" loading={true} />
-			<ImageCard aspectRatio="1:1" loading={true} />
+			<CardImage aspectRatio="1:1" loading={true} />
+			<CardImage aspectRatio="1:1" loading={true} />
+			<CardImage aspectRatio="1:1" loading={true} />
+			<CardImage aspectRatio="1:1" loading={true} />
 		</div>
 		<div class="mt-6 lg:mt-0 text-center lg:text-left">
 			<ul class="flex flex-col list-disc list-inside text-xl gap-y-4">
@@ -76,7 +76,7 @@
 				<li>1 year of content creation (video editing + thumbnails)</li>
 				<li>1 year of self-hosting services</li>
 				<span class="text-center font-bold lg:text-left">and</span>
-				<li>3 years of Java (via SpigotMC)</li>
+				<li>4 years of Java (via SpigotMC)</li>
 				<li>3 years of C# (via Unity)</li>
 				<li>2 years of JS/TS (via multiple projects)</li>
 				<li>1 year of web development</li>
@@ -86,8 +86,8 @@
 </Container>
 
 <!-- Featured projects section -->
-<Container title="Featured Projects">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<Container title="Some of my work..">
+	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 		<Card
 			title="Project Title 1"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
@@ -108,8 +108,8 @@
 </Container>
 
 <!-- Featured videos section -->
-<Container title="Featured Videos">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<Container title="..and some of my videos too!">
+	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 		<Card
 			title="Video Title 1"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
