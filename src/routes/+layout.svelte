@@ -63,7 +63,7 @@
 		<AppBar>
 			<svelte:fragment slot="lead">
 				<!-- Hamburger menu -->
-				<button class="lg:hidden mr-4 cursor-pointer h-8 w-8" on:click={toggleMenu}>
+				<button class="md:hidden mr-4 cursor-pointer h-8 w-8" on:click={toggleMenu}>
 					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
 					</svg>
@@ -71,7 +71,7 @@
 				<img class="h-9" src="/images/jovannmc_white_wordmark.png" alt="JovannMC wordmark logo" />
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<div class="hidden lg:flex gap-8 items-center">
+				<div class="hidden md:flex gap-8 items-center">
 					<a href="/"> Home </a>
 					<a href="/videos"> Videos </a>
 					<a href="/contact"> Contact </a>

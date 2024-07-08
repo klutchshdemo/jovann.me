@@ -138,6 +138,8 @@
 	<ActionButton text="Contact" href="/contact" />
 </Container>
 
+<br><br>
+
 <style>
 	.content {
 		position: relative;

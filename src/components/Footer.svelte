@@ -50,7 +50,7 @@
 					<!-- First row of icons -->
 					<div class="flex justify-end lg:gap-4 gap-8 lg:mb-2 mb-4">
 						{#each firstRowLinks as { name, url, link }}
-							<a href={link} target="_blank" class="w-8 h-8 lg:w-7 lg:h-7">
+							<a href={link} target="_blank" class="social-link w-8 h-8 lg:w-7 lg:h-7">
 								<img class="w-8 h-8 lg:w-7 lg:h-7" src={url} alt={name} />
 							</a>
 						{/each}
@@ -58,7 +58,7 @@
 					<!-- Second row of icons -->
 					<div class="flex justify-end lg:gap-4 gap-8">
 						{#each secondRowLinks as { name, url, link }}
-							<a href={link} target="_blank" class="w-8 h-8 lg:w-7 lg:h-7">
+							<a href={link} target="_blank" class="social-link w-8 h-8 lg:w-7 lg:h-7">
 								<img class="w-8 h-8 lg:w-7 lg:h-7" src={url} alt={name} />
 							</a>
 						{/each}
@@ -76,3 +76,18 @@
 		</div>
 	</div>
 </footer>
+
+<style>
+	.social-link {
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
+		transform: scale(1);
+	}
+
+	.social-link:hover,
+	.social-link:active,
+	.social-link:focus {
+		transform: scale(1.25);
+	}
+</style>
