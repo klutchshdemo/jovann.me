@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 
 	export let src = '';
@@ -13,6 +13,7 @@
 	export let hoverEffect = false;
 
 	let defaultAspectRatioValue = 0;
+	let element: Element;
 
 	// If aspect ratio is not provided, load image and calculate aspect ratio
 	onMount(() => {
@@ -22,6 +23,15 @@
 			if (aspectRatio === '') aspectRatio = `${img.naturalWidth}:${img.naturalHeight}`;
 		};
 		img.src = src;
+
+		// If no width and height specified, take the parent's size
+		if (width === '' && height === '') {
+			const parent = element.parentNode as HTMLElement;
+			if (parent !== null) {
+				width = `${parent.offsetWidth}px`;
+				height = `${parent.offsetHeight}px`;
+			}
+		}
 	});
 
 	// Calculate padding top for aspect ratio box
@@ -51,6 +61,7 @@
 	class={`image-container relative overflow-hidden rounded-lg ${!transparent ? 'bg-surface-400' : ''} ${loading ? 'animate-pulse' : ''} ${hoverEffect ? 'hover-effect' : ''}`}
 	style={`width: ${computedWidth}; height: ${computedHeight};`}
 	tabindex="-1"
+	bind:this={element}
 >
 	<div
 		class="image-content"

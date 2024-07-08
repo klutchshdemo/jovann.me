@@ -101,7 +101,7 @@
 	<!-- Footer -->
 	<svelte:fragment slot="pageFooter">
 		<Footer />
-	 </svelte:fragment>
+	</svelte:fragment>
 </AppShell>
 
 <style>

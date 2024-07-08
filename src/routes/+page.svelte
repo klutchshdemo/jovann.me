@@ -4,6 +4,7 @@
 
 	import Container from '../components/Container.svelte';
 	import Card from '../components/Card.svelte';
+	import List from '../components/List.svelte';
 	import ResponsiveImage from '../components/ResponsiveImage.svelte';
 	import ActionButton from '../components/ActionButton.svelte';
 
@@ -30,6 +31,38 @@
 
 		typeItInstance.go();
 	});
+
+	const contactSections = [
+		{
+			title: 'You could contact to:',
+			items: [
+				'get to know me and become friends :D',
+				'ask for help on something I made/host',
+				'suggest ideas for my next projects',
+				'report issues with my current projects'
+			]
+		},
+		{
+			title: "You can't contact to:",
+			items: ["buy or give you things (you'd be surprised)", 'get mad at me for who I am - tough luck']
+		}
+	];
+
+	const aboutSections = [
+		{
+			title: '',
+			items: [
+				'15 years of life (via Earth)',
+				'1 year of content creation (video editing + thumbnails)',
+				'1 year of self-hosting services',
+				'and',
+				'4 years of Java (via SpigotMC)',
+				'3 years of C# (via Unity)',
+				'2 years of JS/TS (via multiple projects)',
+				'1 year of web development'
+			]
+		}
+	];
 </script>
 
 <section class="content">
@@ -58,28 +91,14 @@
 
 <!-- About me Section -->
 <Container title="A little about me!">
-	<p class="text-xl text-center mb-6">
+	<p class="text-xl text-center">
 		I'm a 15 year old from the Philippines that grew up with technology, gaming, and the internet at a young age. I love
 		learning new things, starting projects I never finish, and hanging out with friends (especially in VR)! I do content
 		creation, program stuff, and self-host random services on my "funny" project domain. Some of my "skills" are below!
 	</p>
 	<div class="flex flex-col lg:flex-row items-center justify-center lg:gap-16">
-		<!-- Image placeholders -->
-		<div class="flex flex-col md:flex-row">
-			<ResponsiveImage src="/images/jovann_hi.png" width="20rem" aspectRatio="1:1" transparent={true} />
-		</div>
-		<div class="mt-6 lg:mt-0 text-center lg:text-left">
-			<ul class="flex flex-col list-disc list-inside text-xl gap-y-4">
-				<li>15 years of life (via Earth)</li>
-				<li>1 year of content creation (video editing + thumbnails)</li>
-				<li>1 year of self-hosting services</li>
-				<span class="text-center font-bold lg:text-left">and</span>
-				<li>4 years of Java (via SpigotMC)</li>
-				<li>3 years of C# (via Unity)</li>
-				<li>2 years of JS/TS (via multiple projects)</li>
-				<li>1 year of web development</li>
-			</ul>
-		</div>
+		<ResponsiveImage src="/images/jovann_hi.png" width="20rem" aspectRatio="1:1" transparent={true} />
+		<List sections={aboutSections} />
 	</div>
 </Container>
 
@@ -109,7 +128,7 @@
 </Container>
 
 <!-- Featured videos section -->
-<Container title="..and some of my videos too!">
+<Container title="..and my videos too!">
 	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 		<Card
 			title="Video Title 1"
@@ -135,10 +154,18 @@
 
 <!-- Contact section -->
 <Container title="Contact">
-	<p class="text-xl text-center mb-6">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
-		aliqua.
+	<p class="text-xl text-center justify-center">
+		That's some of my stuff - did you like my work? Want to contact me? Maybe to sponsor me or give me free stuff (I
+		wish)?<br />
+		Head over to the contact page to see all the (hundred) platforms you could use to contact me!
 	</p>
+	<div class="flex flex-col lg:flex-row items-center justify-center content-center lg:gap-16">
+		<ResponsiveImage src="/images/jovann_pout.png" width="20rem" aspectRatio="1:1" transparent={true} />
+		<div class="mt-6 lg:mt-0 text-center lg:text-left">
+			<List sections={contactSections} />
+		</div>
+	</div>
+
 	<ActionButton text="Contact" href="/contact" />
 </Container>
 
