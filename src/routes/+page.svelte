@@ -4,7 +4,6 @@
 
 	import Container from '../components/Container.svelte';
 	import Card from '../components/Card.svelte';
-	import List from '../components/List.svelte';
 	import ResponsiveImage from '../components/ResponsiveImage.svelte';
 	import ActionButton from '../components/ActionButton.svelte';
 
@@ -31,38 +30,6 @@
 
 		typeItInstance.go();
 	});
-
-	const contactSections = [
-		{
-			title: 'You could contact to:',
-			items: [
-				'get to know me and become friends :D',
-				'ask for help on something I made/host',
-				'suggest ideas for my next projects',
-				'report issues with my current projects'
-			]
-		},
-		{
-			title: "You can't contact to:",
-			items: ["buy or give you things (you'd be surprised)", 'get mad at me for who I am - tough luck']
-		}
-	];
-
-	const aboutSections = [
-		{
-			title: '',
-			items: [
-				'15 years of life (via Earth)',
-				'1 year of content creation (video editing + thumbnails)',
-				'1 year of self-hosting services',
-				'and',
-				'4 years of Java (via SpigotMC)',
-				'3 years of C# (via Unity)',
-				'2 years of JS/TS (via multiple projects)',
-				'1 year of web development'
-			]
-		}
-	];
 </script>
 
 <section class="content">
@@ -98,7 +65,18 @@
 	</p>
 	<div class="flex flex-col lg:flex-row items-center justify-center lg:gap-16">
 		<ResponsiveImage src="/images/jovann_hi.png" width="20rem" aspectRatio="1:1" transparent={true} />
-		<List sections={aboutSections} />
+		<div class="mt-6 lg:mt-0 text-center lg:text-left">
+			<ul class="flex flex-col list-disc list-inside text-xl gap-y-3">
+				<li>15 years of life (via Earth)</li>
+				<li>1 year of content creation (video editing + thumbnails)</li>
+				<li>1 year of self-hosting services</li>
+				<span class="text-center lg:text-left font-bold">and</span>
+				<li>4 years of Java (via SpigotMC)</li>
+				<li>3 years of C# (via Unity)</li>
+				<li>2 years of JS/TS (via multiple projects)</li>
+				<li>1 year of web development</li>
+			</ul>
+		</div>
 	</div>
 </Container>
 
@@ -155,14 +133,27 @@
 <!-- Contact section -->
 <Container title="Contact">
 	<p class="text-xl text-center justify-center">
-		That's some of my stuff - did you like my work? Want to contact me? Maybe to sponsor me or give me free stuff (I
-		wish)?<br />
+		That's some of my stuff - did you like my work? Want to contact me? Maybe to sponsor me or give me free stuff? (I
+		wish)<br />
 		Head over to the contact page to see all the (hundred) platforms you could use to contact me!
 	</p>
 	<div class="flex flex-col lg:flex-row items-center justify-center content-center lg:gap-16">
 		<ResponsiveImage src="/images/jovann_pout.png" width="20rem" aspectRatio="1:1" transparent={true} />
 		<div class="mt-6 lg:mt-0 text-center lg:text-left">
-			<List sections={contactSections} />
+			<div class="flex flex-col text-xl">
+				<span class="text-center lg:text-left font-bold mt-0 mb-2">You could contact to:</span>
+				<ul class="flex flex-col gap-y-2 list-disc list-inside">
+					<li>get to know me and become friends :D</li>
+					<li>ask for help on something I made/host</li>
+					<li>suggest ideas for my next projects</li>
+					<li>report an issue on one of my current projects</li>
+				</ul>
+				<span class="text-center lg:text-left font-bold mt-8 mb-2">You can't contact to:</span>
+				<ul class="flex flex-col gap-y-2 list-disc list-inside">
+					<li>buy your (or give you) stuff; you'd be surprised</li>
+					<li>get mad at me for who I am; tough luck</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
