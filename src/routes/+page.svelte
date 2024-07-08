@@ -82,7 +82,7 @@
 
 <!-- Featured projects section -->
 <Container title="Some of my work..">
-	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
 		<Card
 			title="Project Title 1"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
@@ -107,7 +107,7 @@
 
 <!-- Featured videos section -->
 <Container title="..and my videos too!">
-	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
 		<Card
 			title="Video Title 1"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."

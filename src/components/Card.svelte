@@ -3,14 +3,16 @@
 	export let description = '';
 	export let footer = '';
 	export let thumbnail = '';
-	let isValidThumbnail = true;
+	export let loading = false;
 </script>
 
 <div class="card bg-surface-800 rounded-lg shadow-md overflow-hidden" tabindex="-1">
-	{#if isValidThumbnail && thumbnail}
-		<img src={thumbnail} alt={title} class="h-64 object-cover w-full" on:error={() => (isValidThumbnail = false)} />
-	{:else}
+	{#if loading}
 		<div class="bg-surface-500 h-64"></div>
+	{/if}
+	
+	{#if thumbnail}
+		<img src={thumbnail} alt={title} class="h-64 object-cover w-full" on:error={() => (loading = false)} />
 	{/if}
 
 	<div class="flex flex-col justify-between p-4 h-40">
