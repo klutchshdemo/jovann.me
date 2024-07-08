@@ -65,11 +65,8 @@
 	</p>
 	<div class="flex flex-col lg:flex-row items-center justify-center lg:gap-16">
 		<!-- Image placeholders -->
-		<div class="grid grid-cols-2 gap-4">
-			<ResponsiveImage aspectRatio="1:1" loading={true} />
-			<ResponsiveImage aspectRatio="1:1" loading={true} />
-			<ResponsiveImage aspectRatio="1:1" loading={true} />
-			<ResponsiveImage aspectRatio="1:1" loading={true} />
+		<div class="flex flex-col md:flex-row">
+			<ResponsiveImage src="/images/jovann_hi.png" width="20rem" aspectRatio="1:1" transparent={true} />
 		</div>
 		<div class="mt-6 lg:mt-0 text-center lg:text-left">
 			<ul class="flex flex-col list-disc list-inside text-xl gap-y-4">

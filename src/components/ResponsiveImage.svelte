@@ -10,6 +10,7 @@
 
 	export let transparent = false;
 	export let loading = false;
+	export let hoverEffect = false;
 
 	let defaultAspectRatioValue = 0;
 
@@ -23,11 +24,10 @@
 		img.src = src;
 	});
 
+	// Calculate padding top for aspect ratio box
 	$: numeratorDenominator = aspectRatio.split(':').map(Number);
 	$: aspectRatioValue =
 		numeratorDenominator.length === 2 ? numeratorDenominator[0] / numeratorDenominator[1] : defaultAspectRatioValue;
-
-	// Calculate padding top for aspect ratio box
 	$: paddingTop = 100 / aspectRatioValue;
 
 	// Calculate dimensions based on aspect ratio if one is provided without the other
@@ -48,7 +48,7 @@
 </script>
 
 <div
-	class={`image-container relative overflow-hidden rounded-lg ${!transparent ? 'bg-surface-400' : ''} ${loading ? 'animate-pulse' : ''}`}
+	class={`image-container relative overflow-hidden rounded-lg ${!transparent ? 'bg-surface-400' : ''} ${loading ? 'animate-pulse' : ''} ${hoverEffect ? 'hover-effect' : ''}`}
 	style={`width: ${computedWidth}; height: ${computedHeight};`}
 	tabindex="-1"
 >
@@ -68,16 +68,19 @@
 			transform 0.3s ease,
 			box-shadow 0.3s ease;
 		transform: scale(1);
+	}
+	.image-container.hover-effect,
+	.image-content-hover-effect {
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	}
+
 	.aspect-ratio-box:empty {
 		display: block;
 	}
 
-	.image-container:hover,
-	.image-container:active,
-	.image-container:focus {
-		/* Added for touch devices, ensure your elements are focusable */
+	.image-container.hover-effect:hover,
+	.image-container.hover-effect:active,
+	.image-container.hover-effect:focus {
 		transform: scale(1.05);
 		box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 	}
