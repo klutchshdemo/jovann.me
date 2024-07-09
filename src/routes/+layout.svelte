@@ -13,10 +13,8 @@
 	}
 
 	// Fixes sveltekit issue w/ scroll restoration on navigation
-	let container: HTMLElement;
-
 	afterNavigate(() => {
-		container.scrollTo(0, 0);
+		document.getElementById('page')?.scrollTo(0, 0);
 	});
 </script>
 
