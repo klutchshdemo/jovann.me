@@ -12,7 +12,7 @@
 		menuOpen = !menuOpen;
 	}
 
-	// Fixes sveltekit issue w/ scroll restoration on navigation
+	// Fixes sveltekit issue w/ scroll preservation on navigation
 	afterNavigate(() => {
 		document.getElementById('page')?.scrollTo(0, 0);
 	});

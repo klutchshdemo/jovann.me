@@ -1,17 +1,17 @@
 <script>
 	const socialLinks = [
-		{ name: 'Email', url: '/images/socials/email.svg', link: 'mailto:jovannmc@femboyfurry.net'},
-		{ name: 'Discord', url: '/images/socials/discord.svg', link: 'https://discord.com/invite/fPrjXeN9fe' },
-		{ name: 'Matrix', url: '/images/socials/matrix.svg', link: 'https://matrix.to/#/@jovannmc:tchncs.de' },
-		{ name: 'Twitter', url: '/images/socials/twitter.svg', link: 'https://twitter.com/JovannMC' },
-		{ name: 'Mastodon', url: '/images/socials/mastodon.svg', link: 'https://mastodon.femboyfurry.net/@JovannMC' },
-		{ name: 'Bluesky', url: '/images/socials/bluesky.svg', link: 'https://bsky.app/profile/femboyfurry.net' },
-		{ name: 'GitHub', url: '/images/socials/github.svg', link: 'https://github.com/JovannMC' },
-		{ name: 'YouTube', url: '/images/socials/youtube.svg', link: 'https://youtube.com/@JovannMC' },
-		{ name: 'Vanillo', url: '/images/socials/vanillo.svg', link: 'https://vanillo.tv/u/JovannMC' },
-		{ name: 'Twitch', url: '/images/socials/twitch.svg', link: 'https://twitch.tv/JovannMC' },
-		{ name: 'PeerTube', url: '/images/socials/peertube.svg', link: 'https://vid.femboyfurry.net/c/jovannmc' },
-		{ name: 'Odysee', url: '/images/socials/odysee.svg', link: 'https://odysee.com/@JovannMC:7' }
+		{ name: 'Email', src: '/images/socials/email.svg', href: 'mailto:jovannmc@femboyfurry.net' },
+		{ name: 'Discord', src: '/images/socials/discord.svg', href: 'https://discord.com/invite/fPrjXeN9fe' },
+		{ name: 'Matrix', src: '/images/socials/matrix.svg', href: 'https://matrix.to/#/@jovannmc:tchncs.de' },
+		{ name: 'Twitter', src: '/images/socials/twitter.svg', href: 'https://twitter.com/JovannMC' },
+		{ name: 'Mastodon', src: '/images/socials/mastodon.svg', href: 'https://mastodon.femboyfurry.net/@JovannMC' },
+		{ name: 'Bluesky', src: '/images/socials/bluesky.svg', href: 'https://bsky.app/profile/femboyfurry.net' },
+		{ name: 'GitHub', src: '/images/socials/github.svg', href: 'https://github.com/JovannMC' },
+		{ name: 'YouTube', src: '/images/socials/youtube.svg', href: 'https://youtube.com/@JovannMC' },
+		{ name: 'Vanillo', src: '/images/socials/vanillo.svg', href: 'https://vanillo.tv/u/JovannMC' },
+		{ name: 'Twitch', src: '/images/socials/twitch.svg', href: 'https://twitch.tv/JovannMC' },
+		{ name: 'PeerTube', src: '/images/socials/peertube.svg', href: 'https://vid.femboyfurry.net/c/jovannmc' },
+		{ name: 'Odysee', src: '/images/socials/odysee.svg', href: 'https://odysee.com/@JovannMC:7' }
 	];
 
 	let firstRowLinks = socialLinks.slice(0, Math.ceil(socialLinks.length / 2));
@@ -50,18 +50,18 @@
 				<div>
 					<h3 class="font-bold mb-4 lg:mb-2">Find me</h3>
 					<!-- First row of icons -->
-					<div class="flex justify-end lg:gap-4 gap-8 lg:mb-2 mb-4">
-						{#each firstRowLinks as { name, url, link }}
-							<a href={link} target="_blank" class="social-link w-8 h-8 lg:w-7 lg:h-7">
-								<img class="w-8 h-8 lg:w-7 lg:h-7" src={url} alt={name} />
+					<div class="flex justify-end lg:gap-4 gap-6 lg:mb-2 mb-4">
+						{#each firstRowLinks as { name, src, href }}
+							<a {href} target="_blank" class="social-link w-8 h-8 lg:w-7 lg:h-7">
+								<img class="w-8 h-8 lg:w-7 lg:h-7" {src} alt={name} />
 							</a>
 						{/each}
 					</div>
 					<!-- Second row of icons -->
-					<div class="flex justify-end lg:gap-4 gap-8">
-						{#each secondRowLinks as { name, url, link }}
-							<a href={link} target="_blank" class="social-link w-8 h-8 lg:w-7 lg:h-7">
-								<img class="w-8 h-8 lg:w-7 lg:h-7" src={url} alt={name} />
+					<div class="flex justify-end lg:gap-4 gap-6">
+						{#each secondRowLinks as { name, src, href }}
+							<a {href} target="_blank" class="social-link w-8 h-8 lg:w-7 lg:h-7">
+								<img class="w-8 h-8 lg:w-7 lg:h-7" {src} alt={name} />
 							</a>
 						{/each}
 					</div>

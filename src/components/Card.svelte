@@ -3,20 +3,26 @@
 	export let description = '';
 	export let footer = '';
 	export let thumbnail = '';
-	export let url = '';
-	export let hoverable = true;
+	export let href = '';
+	export let fit = 'cover';
 	export let loading = false;
 </script>
 
-{#if url}
-	<a class="card bg-surface-800 rounded-lg shadow-md overflow-hidden" href={url} target="_blank" class:hoverable>
+{#if href}
+	<a class="card hoverable bg-surface-800 rounded-lg shadow-md overflow-hidden" {href} target="_blank">
 		<!-- Card Content -->
 		{#if loading}
 			<div class="bg-surface-500 h-64"></div>
 		{/if}
 
 		{#if thumbnail}
-			<img src={thumbnail} alt={title} class="h-64 object-cover w-full" on:error={() => (loading = false)} />
+			<img
+				src={thumbnail}
+				alt={title}
+				style="object-fit: {fit};"
+				class="h-64 w-full {fit === 'contain' ? 'p-12 bg-surface-500' : ''}"
+				on:error={() => (loading = true)}
+			/>
 		{/if}
 
 		<div class="flex flex-col justify-between p-4 h-40">
@@ -26,14 +32,20 @@
 		</div>
 	</a>
 {:else}
-	<div class="card bg-surface-800 rounded-lg shadow-md overflow-hidden" class:hoverable>
+	<div class="card bg-surface-800 rounded-lg shadow-md overflow-hidden">
 		<!-- Card Content -->
 		{#if loading}
 			<div class="bg-surface-500 h-64"></div>
 		{/if}
 
 		{#if thumbnail}
-			<img src={thumbnail} alt={title} class="h-64 object-cover w-full" on:error={() => (loading = false)} />
+			<img
+				src={thumbnail}
+				alt={title}
+				style="object-fit: {fit};"
+				class="h-64 w-full {fit === 'contain' ? 'p-12 bg-surface-500' : ''}"
+				on:error={() => (loading = true)}
+			/>
 		{/if}
 
 		<div class="flex flex-col justify-between p-4 h-40">

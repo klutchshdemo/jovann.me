@@ -10,19 +10,19 @@
 					name: 'Email',
 					description: "Send me an email, if that's more your thing!",
 					thumbnail: '/images/socials/email.svg',
-					url: 'mailto:jovannmc@femboyfurry.net'
+					href: 'mailto:jovannmc@femboyfurry.net'
 				},
 				{
 					name: 'Discord',
 					description: 'Join my Discord server and find me there!',
 					thumbnail: '/images/socials/discord.svg',
-					url: 'https://discord.com/invite/fPrjXeN9fe'
+					href: 'https://discord.com/invite/fPrjXeN9fe'
 				},
 				{
 					name: 'Matrix',
 					description: 'Add me on Matrix on your favourite homeserver and client!',
 					thumbnail: '/images/socials/matrix.svg',
-					url: 'https://matrix.to/#/@jovannmc:tchncs.de'
+					href: 'https://matrix.to/#/@jovannmc:tchncs.de'
 				}
 			]
 		},
@@ -33,19 +33,19 @@
 					name: 'Twitter',
 					description: "Follow me on Twitter (no it's not X, and never will be)",
 					thumbnail: '/images/socials/twitter.svg',
-					url: 'https://twitter.com/JovannMC'
+					href: 'https://twitter.com/JovannMC'
 				},
 				{
 					name: 'Mastodon',
 					description: 'Follow me on the fediverse (for micro-blogging)!',
 					thumbnail: '/images/socials/mastodon.svg',
-					url: 'https://mastodon.femboyfurry.net/@JovannMC'
+					href: 'https://mastodon.femboyfurry.net/@JovannMC'
 				},
 				{
 					name: 'Bluesky',
 					description: 'Follow me on the "Twitter replacement" people moved to!',
 					thumbnail: '/images/socials/bluesky.svg',
-					url: 'https://bsky.app/profile/femboyfurry.net'
+					href: 'https://bsky.app/profile/femboyfurry.net'
 				}
 			]
 		},
@@ -56,37 +56,37 @@
 					name: 'GitHub',
 					description: 'Find my open-sourced projects and my contributions!',
 					thumbnail: '/images/socials/github.svg',
-					url: 'https://github.com/JovannMC'
+					href: 'https://github.com/JovannMC'
 				},
 				{
 					name: 'YouTube',
 					description: 'Subscribe and watch my videos on the platform we are all stuck with.',
 					thumbnail: '/images/socials/youtube.svg',
-					url: 'https://youtube.com/@JovannMC'
+					href: 'https://youtube.com/@JovannMC'
 				},
 				{
 					name: 'Vanillo',
 					description: 'Subscribe and watch my videos on the cool ice cream platform!',
 					thumbnail: '/images/socials/vanillo.svg',
-					url: 'https://vanillo.tv/u/JovannMC'
+					href: 'https://vanillo.tv/u/JovannMC'
 				},
 				{
 					name: 'Twitch',
 					description: 'Follow me and maybe watch my live streams (if I start again)!',
 					thumbnail: '/images/socials/twitch.svg',
-					url: 'https://twitch.tv/JovannMC'
+					href: 'https://twitch.tv/JovannMC'
 				},
 				{
 					name: 'PeerTube',
 					description: 'Follow me on the fediverse (for video-sharing)!',
 					thumbnail: '/images/socials/peertube.svg',
-					url: 'https://vid.femboyfurry.net/c/jovannmc'
+					href: 'https://vid.femboyfurry.net/c/jovannmc'
 				},
 				{
 					name: 'Odysee',
 					description: 'Follow me and watch my videos on the.. crypto platform. oh.',
 					thumbnail: '/images/socials/odysee.svg',
-					url: 'https://odysee.com/@JovannMC:7'
+					href: 'https://odysee.com/@JovannMC:7'
 				}
 			]
 		}
@@ -107,7 +107,7 @@
 					description={link.description}
 					footer="Click to visit"
 					thumbnail={link.thumbnail}
-					url={link.url}
+					href={link.href}
 				></HorizontalCard>
 			{/each}
 		</div>

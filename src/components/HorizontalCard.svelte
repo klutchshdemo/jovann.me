@@ -3,13 +3,12 @@
 	export let description = '';
 	export let footer = '';
 	export let thumbnail = '';
-	export let url = '';
-	export let hoverable = true;
+	export let href = '';
 	export let loading = false;
 </script>
 
-{#if url}
-	<a class="horizontal-card bg-surface-800 rounded-lg shadow-md overflow-hidden flex" href={url} target="_blank" class:hoverable>
+{#if href}
+	<a class="horizontal-card hoverable bg-surface-800 rounded-lg shadow-md overflow-hidden flex" {href} target="_blank">
 		{#if loading}
 			<div class="flex justify-center items-center thumbnail bg-surface-500 min-w-24"></div>
 		{/if}
@@ -27,7 +26,7 @@
 		</div>
 	</a>
 {:else}
-	<div class="horizontal-card bg-surface-800 rounded-lg shadow-md overflow-hidden flex" class:hoverable>
+	<div class="horizontal-card bg-surface-800 rounded-lg shadow-md overflow-hidden flex">
 		{#if loading}
 			<div class="flex justify-center items-center thumbnail bg-surface-500 min-w-24"></div>
 		{/if}
