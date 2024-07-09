@@ -69,8 +69,8 @@
 	<!-- Hamburger menu contents -->
 	<div class="lg:hidden" class:open={menuOpen}>
 		{#if menuOpen}
-			<div transition:slide={{ duration: 300 }} class="absolute top-16 left-0 w-full">
-				<div class="flex flex-col gap-1 justify-center items-center bg-surface-900 shadow-lg px-4 py-2 z-10">
+			<div transition:slide={{ duration: 300 }} class="absolute top-16 left-0 w-full z-50">
+				<div class="flex flex-col gap-1 justify-center items-center bg-surface-900 shadow-lg px-4 py-2">
 					<a href="/" class="w-full text-center block py-2"> Home </a>
 					<a href="/videos" class="w-full text-center block py-2"> Videos </a>
 					<a href="/contact" class="w-full text-center block py-2"> Contact </a>
