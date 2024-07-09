@@ -11,9 +11,12 @@
 		const phrases = [
 			{ text: 'hates', deleteAfter: 150, typeAfter: 200 },
 			{ text: 'loves technology', deleteAfter: 650, typeAfter: 650 },
+			{ text: 'hangs out in VR', deleteAfter: 650, typeAfter: 650 },
 			{ text: 'creates content', deleteAfter: 650, typeAfter: 650 },
+			{ text: 'loves friends', deleteAfter: 650, typeAfter: 650 },
 			{ text: 'sucks at programming', deleteAfter: 650, typeAfter: 650 },
-			{ text: 'is gay af', deleteAfter: 80, typeAfter: 350 }
+			{ text: 'is gay af', deleteAfter: 70, typeAfter: 200 },
+			{ text: 'is lazy af', deleteAfter: 650, typeAfter: 650 }
 		];
 
 		const typeItInstance = new TypeIt('#typewriter', {
@@ -31,6 +34,10 @@
 		typeItInstance.go();
 	});
 </script>
+
+<header>
+	<title>jovann.me</title>
+</header>
 
 <section class="content">
 	<div class="flex flex-col justify-center items-center" style="min-height: calc(100vh - var(--navbar-height));">

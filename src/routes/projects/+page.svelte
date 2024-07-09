@@ -175,6 +175,10 @@
 	];
 </script>
 
+<header>
+	<title>My projects!</title>
+</header>
+
 <Container title="My projects!">
 	<p class="text-xl text-center justify-center">
 		Here are some of the projects I've worked on ranging from programs and websites, to games and Minecraft plugins!<br

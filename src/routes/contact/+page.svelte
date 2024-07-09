@@ -105,6 +105,10 @@
 	];
 </script>
 
+<header>
+	<title>Contact me!</title>
+</header>
+
 <Container title="Contact me!">
 	<p class="text-xl text-center justify-center">
 		Here are all the ways you can contact me! Bug me about issues, ask me questions, or just say hi!<br /><br />
