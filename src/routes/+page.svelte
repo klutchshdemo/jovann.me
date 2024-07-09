@@ -111,22 +111,25 @@
 <Container title="..and my videos too!">
 	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
 		<Card
-			title="Video Title 1"
-			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
-			footer="February 29th, 2024"
-			thumbnail="/images/projects/joevan.png"
+			title="finding insecure vnc sessions w/ VNC Resolver"
+			description="I take a look at ComputerNewb's VNC Resolver project and find.. concerning VNC sessions."
+			footer="May 23, 2024"
+			thumbnail="/images/videos/insecure_vnc_sessions.jpg"
+			href="https://www.youtube.com/watch?v=1KzjaRx9rWA"
 		/>
 		<Card
-			title="Video Title 2"
-			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
-			footer="February 29th, 2024"
-			thumbnail="/images/projects/jovannillo.png"
+			title="playing tf2.. with a drawing tablet? (NO KB/MOUSE)"
+			description="TF2 is a fun game, let's play it entirely on a drawing tablet. No keyboard or mouse allowed."
+			footer="September 14, 2023"
+			thumbnail="/images/videos/tf2_with_drawing_tablet.jpg"
+			href="https://www.youtube.com/watch?v=4gKv2x5-lMg"
 		/>
 		<Card
-			title="Video Title 3"
-			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
-			footer="February 29th, 2024"
-			thumbnail="/images/projects/joe biden good.jpg"
+			title="a cheaper FBT solution for PCVR and Quest users!"
+			description="I unbox the HaritoraX Wireless from Shiftall, a cheaper VR full body tracking kit using IMUs!"
+			footer="January 26, 2024"
+			thumbnail="/images/videos/haritorax_wireless_unboxing.jpg"
+			href="https://www.youtube.com/watch?v=Ta7ZFd_VPDU"
 		/>
 	</div>
 	<ActionButton text="Videos" href="/videos" />
