@@ -23,10 +23,10 @@
 				},
 				{
 					name: 'FurryFlix',
-					description: 'FurryFlix, another PeerTube instance for the furries.',
+					description: 'Yet another PeerTube instance with the funny domain - vid.femboyfurry.net',
 					footer: 'Active',
 					thumbnail: '/images/socials/peertube.svg',
-					href: 'https://femboyfurry.net',
+					href: 'https://vid.femboyfurry.net',
 					fit: 'contain'
 				}
 			]
@@ -153,7 +153,7 @@
 				{
 					name: 'Salad Simulator',
 					description: 'A (bad) game based off the program that earns you money, Salad.',
-					footer: 'Unity/C$',
+					footer: 'Unity/C#',
 					thumbnail: '/images/projects/salad-simulator.png',
 					href: 'https://github.com/JovannMC/salad-simulator',
 					fit: 'contain'
