@@ -9,9 +9,8 @@
 				{
 					name: 'Silly Creative Collective',
 					description: 'Soon to host many projects and services, SCC is ran by a group of friends!',
-					footer: 'Active',
+					footer: 'In development',
 					thumbnail: '/images/projects/scc_logo.png',
-					href: 'Vanilla/JS',
 					fit: 'contain'
 				},
 				{
@@ -110,7 +109,7 @@
 					name: 'MentionChat',
 					description: 'A simple plugin to mention other players in chat.',
 					footer: 'Spigot/Java',
-					thumbnail: '/images/projects/spigotmc.png',
+					thumbnail: '/images/socials/spigotmc.png',
 					href: 'https://www.spigotmc.org/resources/mentionchat-mention-other-players-in-chat-1-8-1-20-4.111656/',
 					fit: 'contain'
 				},
@@ -119,7 +118,7 @@
 					description:
 						"Let players be invincible to other player attacks. I couldn't find a similar plugin, so I did it myself!",
 					footer: 'Spigot/Java',
-					thumbnail: '/images/projects/spigotmc.png',
+					thumbnail: '/images/socials/spigotmc.png',
 					href: 'https://github.com/JovannMC/PlayerInvincibility',
 					fit: 'contain'
 				},
@@ -127,7 +126,7 @@
 					name: 'ArcherySMP',
 					description: 'A plugin for the ArcherySMP server to add archers and hunters. A free commission.',
 					footer: 'Spigot/Java',
-					thumbnail: '/images/projects/spigotmc.png',
+					thumbnail: '/images/socials/spigotmc.png',
 					fit: 'contain'
 				}
 				// TODO: add to project later when I add carousel support
@@ -135,17 +134,42 @@
 					name: 'JustFly',
 					description: 'Yet another flight plugin.',
 					footer: 'Spigot/Java',
-					thumbnail: '/images/projects/spigotmc.png',
+					thumbnail: '/images/socials/spigotmc.png',
 					href: 'https://www.spigotmc.org/resources/justfly-yet-another-flight-plugin.84407/',
 					fit: 'contain'
 				},{
 					name: 'IslandTurfs',
 					description: "A plugin recreating Protocraft's IslandTurfs minigame as a Spigot plugin.",
 					footer: 'Spigot/Java',
-					thumbnail: '/images/projects/spigotmc.png',
+					thumbnail: '/images/socials/spigotmc.png',
 					href: 'https://github.com/JovannMC/IslandTurfs',
 					fit: 'contain'
 				}*/
+			]
+		},
+		{
+			category: 'Game Development',
+			projects: [
+				{
+					name: 'Salad Simulator',
+					description: 'A (bad) game based off the program that earns you money, Salad.',
+					footer: 'Unity/C$',
+					thumbnail: '/images/projects/salad-simulator.png',
+					href: 'https://github.com/JovannMC/salad-simulator',
+					fit: 'contain'
+				},
+				{
+					name: 'Salad Clicker',
+					description: 'A (bad) clicker game.. also based off the program that earns you money, Salad.',
+					footer: 'Unity/C#',
+					href: 'https://github.com/JovannMC/salad-clicker',
+				},
+				{
+					name: 'Actually Planned 3D Shooter',
+					description: 'A really old Unity game I abandoned.. yeah that is actually the name.',
+					footer: 'Unity/C#',
+					href: 'https://github.com/JovannMC/actually-planned-3d-shooter'
+				}
 			]
 		}
 	];

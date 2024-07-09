@@ -84,22 +84,24 @@
 <Container title="Some of my work..">
 	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
 		<Card
-			title="Project Title 1"
-			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
-			footer="Software"
-			thumbnail="/images/projects/jovannillo.png"
-		/>
-		<Card
-			title="Project Title 2"
-			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
-			footer="Software"
+			title="SlimeTora"
+			description="A program that connects all HaritoraX trackers to the SlimeVR server."
+			footer="Electron/Bulma/TS"
 			thumbnail="/images/projects/slimetora_icon.png"
+			href="https://github.com/OCSYT/SlimeTora"
 		/>
 		<Card
-			title="Project Title 3"
-			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
-			footer="Software"
-			thumbnail="/images/projects/saladsim1.png"
+			title="silence-remover"
+			description="A Python script to remove silence from the beginning and end of audio files."
+			footer="Python"
+			href="https://github.com/JovannMC/silence-remover"
+		/>
+		<Card
+			title="Silly Creative Collective"
+			description="Soon to host many projects and services, SCC is ran by a group of friends!"
+			footer="In development"
+			thumbnail="/images/projects/scc_logo.png"
+			fit="contain"
 		/>
 	</div>
 	<ActionButton text="Projects" href="/projects" />
@@ -111,19 +113,19 @@
 		<Card
 			title="Video Title 1"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
-			footer="September 23, 2023"
+			footer="February 29th, 2024"
 			thumbnail="/images/projects/joevan.png"
 		/>
 		<Card
 			title="Video Title 2"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
-			footer="September 23, 2023"
-			thumbnail="/images/projects/good speed.png"
+			footer="February 29th, 2024"
+			thumbnail="/images/projects/jovannillo.png"
 		/>
 		<Card
 			title="Video Title 3"
 			description="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
-			footer="September 23, 2023"
+			footer="February 29th, 2024"
 			thumbnail="/images/projects/joe biden good.jpg"
 		/>
 	</div>
