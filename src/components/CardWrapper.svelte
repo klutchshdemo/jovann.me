@@ -1,15 +1,15 @@
 <script>
-    export let href;
+	export let href;
 </script>
 
 {#if href}
-    <a class="card hoverable bg-surface-800 rounded-lg shadow-md overflow-hidden" {href} target="_blank">
-        <slot></slot>
-    </a>
+	<a class="card hoverable bg-surface-800 rounded-lg shadow-md overflow-hidden" {href} rel="me" target="_blank">
+		<slot></slot>
+	</a>
 {:else}
-    <div class="card bg-surface-800 rounded-lg shadow-md overflow-hidden">
-        <slot></slot>
-    </div>
+	<div class="card bg-surface-800 rounded-lg shadow-md overflow-hidden">
+		<slot></slot>
+	</div>
 {/if}
 
 <style>

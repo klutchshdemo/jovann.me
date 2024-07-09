@@ -3,7 +3,7 @@
 </script>
 
 {#if href}
-	<a class="horizontal-card hoverable bg-surface-800 rounded-lg shadow-md overflow-hidden flex" {href} target="_blank">
+	<a class="horizontal-card hoverable bg-surface-800 rounded-lg shadow-md overflow-hidden flex" {href} rel="me" target="_blank">
 		<slot></slot>
 	</a>
 {:else}
