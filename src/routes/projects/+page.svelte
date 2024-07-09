@@ -47,7 +47,6 @@
 					name: 'haritorax-interpreter',
 					description: 'A node.js package that allows you to communicate with the HaritoraX FBT trackers.',
 					footer: 'NodeJS/TS',
-					thumbnail: '/images/jovannmc_white.png',
 					href: 'https://github.com/JovannMC/haritorax-interpreter',
 					fit: 'contain'
 				},
@@ -55,7 +54,6 @@
 					name: 'silence-remover',
 					description: 'A Python script to remove silence from the beginning and end of audio files.',
 					footer: 'Python',
-					thumbnail: '/images/jovannmc_white.png',
 					href: 'https://github.com/JovannMC/silence-remover',
 					fit: 'contain'
 				}
@@ -65,7 +63,6 @@
 					name: 'haritora-gx-poc',
 					description: 'A proof-of-concept app that interprets the GX(6/2) dongle data for the HaritoraX Wireless.',
 					footer: 'Python'
-					thumbnail: '/images/jovannmc_white.png',
 					href: 'https://github.com/JovannMC/haritora-gx-poc',
 					fit: 'contain'
 				}*/
@@ -78,14 +75,12 @@
 					name: 'jovann.me',
 					description: 'The website you\'re on! My personal (and more "serious") website.',
 					footer: 'SvelteKit/TS',
-					thumbnail: '/images/jovannmc_white.png',
 					fit: 'contain'
 				},
 				{
 					name: 'femboyfurry.net',
 					description: 'My previous website - more of a joke. Most of my self-hosted projects will be hosted here.',
 					footer: 'Bulma/JS',
-					thumbnail: '/images/jovannmc_white.png',
 					href: 'https://femboyfurry.net',
 					fit: 'contain'
 				},
@@ -131,7 +126,7 @@
 				{
 					name: 'ArcherySMP',
 					description: 'A plugin for the ArcherySMP server to add archers and hunters. A free commission.',
-					footer: 'Spigot/Java - Private',
+					footer: 'Spigot/Java',
 					thumbnail: '/images/projects/spigotmc.png',
 					fit: 'contain'
 				}
