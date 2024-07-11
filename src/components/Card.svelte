@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import CardWrapper from './CardWrapper.svelte';
 
 	export let title = '';
@@ -7,10 +7,11 @@
 	export let thumbnail = '';
 	export let href = '';
 	export let fit = 'cover';
+	export let fitPadding = 'p-12';
 	export let loading = false;
 </script>
 
-<CardWrapper {href}>
+<CardWrapper href={href}>
 	{#if loading}
 		<header>
 			<div class="bg-surface-500 h-64"></div>
@@ -23,7 +24,7 @@
 				src={thumbnail}
 				alt={title}
 				style="object-fit: {fit};"
-				class="h-64 w-full {fit === 'contain' ? 'p-12 bg-surface-500' : ''}"
+				class="h-64 w-full {fit === 'contain' ? `${fitPadding} bg-surface-500` : ''}"
 				on:error={() => (loading = true)}
 			/>
 		</header>
@@ -33,7 +34,7 @@
 				src="/images/jovannmc_white.png"
 				alt={title}
 				style="object-fit: contain;"
-				class="h-64 w-full p-12 bg-surface-500"
+				class="h-64 w-full {fitPadding} bg-surface-500"
 				on:error={() => (loading = true)}
 			/>
 		</header>
@@ -45,6 +46,6 @@
 	</div>
 
 	<footer class="card-footer">
-		<p class="text-surface-400 text-sm">{footer}</p>
+		<p class="text-sm text-surface-400">{footer}</p>
 	</footer>
 </CardWrapper>

@@ -3,8 +3,10 @@
 </script>
 
 {#if href}
-	<a class="card hoverable bg-surface-800 rounded-lg shadow-md overflow-hidden" {href} rel="me" target="_blank">
-		<slot></slot>
+	<a {href} rel="me" target="_blank">
+		<div class="card hoverable bg-surface-800 rounded-lg shadow-md overflow-hidden">
+			<slot></slot>
+		</div>
 	</a>
 {:else}
 	<div class="card bg-surface-800 rounded-lg shadow-md overflow-hidden">
@@ -13,6 +15,13 @@
 {/if}
 
 <style>
+	a {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	.card.hoverable {
 		transition:
 			transform 0.3s ease,
