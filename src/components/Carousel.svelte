@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Swiper from 'swiper';
-	import { Navigation, Pagination } from 'swiper/modules';
+	import { Navigation, Autoplay } from 'swiper/modules';
 	import 'swiper/css';
 	import 'swiper/css/navigation';
 
@@ -9,7 +9,7 @@
 
 	onMount(() => {
 		const swiper = new Swiper(container, {
-			modules: [Navigation, Pagination],
+			modules: [Navigation, Autoplay],
 			slidesPerView: 1,
 			spaceBetween: 10,
 			breakpoints: {
@@ -26,12 +26,10 @@
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true
-			},
-			scrollbar: {
-				el: '.swiper-scrollbar'
+			loop: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: true
 			}
 		});
 	});
@@ -41,12 +39,9 @@
 	<div class="swiper-wrapper">
 		<slot></slot>
 	</div>
-	<div class="swiper-pagination"></div>
 
 	<div class="swiper-button-prev"></div>
 	<div class="swiper-button-next"></div>
-
-	<div class="swiper-scrollbar"></div>
 </div>
 
 <style>
@@ -63,4 +58,7 @@
 		min-width: 0;
 	}
 
+	:global(.swiper) {
+		--swiper-theme-color: #dcdcdcdc; /* Your desired color */
+	}
 </style>
