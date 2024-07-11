@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Container from '../../components/Container.svelte';
 	import Card from '../../components/Card.svelte';
+	import Carousel from '../../components/Carousel.svelte';
 
 	let projectCategories = [
 		{
@@ -55,16 +56,14 @@
 					footer: 'Python',
 					href: 'https://github.com/JovannMC/silence-remover',
 					fit: 'contain'
-				}
-				// TODO: add to project later when I add carousel support
-				/*,
+				},
 				{
 					name: 'haritora-gx-poc',
 					description: 'A proof-of-concept app that interprets the GX(6/2) dongle data for the HaritoraX Wireless.',
-					footer: 'Python'
+					footer: 'Python',
 					href: 'https://github.com/JovannMC/haritora-gx-poc',
 					fit: 'contain'
-				}*/
+				}
 			]
 		},
 		{
@@ -90,16 +89,14 @@
 					thumbnail: '/images/projects/thesaucesage.jpg',
 					href: 'https://thesaucesage.com/',
 					fit: 'cover'
-				}
-				// TODO: add to project later when I add carousel support
-				/*,
+				},
 				{
-					name: 'Sky's portfolio',
+					name: "Sky's portfolio",
 					description: 'A small portfolio for Sky for their art and commissions. A free commission.',
-					thumbnail: '/images/projects/sky_pfp.png',
+					thumbnail: '/images/projects/sky_pfp.jpg',
 					href: 'Vanilla/JS',
 					fit: 'cover'
-				}*/
+				}
 			]
 		},
 		{
@@ -128,23 +125,23 @@
 					footer: 'Spigot/Java',
 					thumbnail: '/images/socials/spigotmc.png',
 					fit: 'contain'
-				}
-				// TODO: add to project later when I add carousel support
-				/*,{
+				},
+				{
 					name: 'JustFly',
 					description: 'Yet another flight plugin.',
 					footer: 'Spigot/Java',
 					thumbnail: '/images/socials/spigotmc.png',
 					href: 'https://www.spigotmc.org/resources/justfly-yet-another-flight-plugin.84407/',
 					fit: 'contain'
-				},{
+				},
+				{
 					name: 'IslandTurfs',
 					description: "A plugin recreating Protocraft's IslandTurfs minigame as a Spigot plugin.",
 					footer: 'Spigot/Java',
 					thumbnail: '/images/socials/spigotmc.png',
 					href: 'https://github.com/JovannMC/IslandTurfs',
 					fit: 'contain'
-				}*/
+				}
 			]
 		},
 		{
@@ -162,7 +159,7 @@
 					name: 'Salad Clicker',
 					description: 'A (bad) clicker game.. also based off the program that earns you money, Salad.',
 					footer: 'Unity/C#',
-					href: 'https://github.com/JovannMC/salad-clicker',
+					href: 'https://github.com/JovannMC/salad-clicker'
 				},
 				{
 					name: 'Actually Planned 3D Shooter',
@@ -190,17 +187,20 @@
 
 {#each projectCategories as category}
 	<Container title={category.category}>
-		<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
-			{#each category.projects as project}
-				<Card
-					title={project.name}
-					description={project.description}
-					footer={project.footer}
-					thumbnail={project.thumbnail}
-					href={project.href}
-					fit={project.fit}
-				/>
+		<Carousel
+			>{#each category.projects as project}
+				<div class="swiper-slide">
+					<Card
+						title={project.name}
+						description={project.description}
+						footer={project.footer}
+						thumbnail={project.thumbnail}
+						href={project.href}
+						fit={project.fit}
+					/>
+				</div>
 			{/each}
-		</div>
+		</Carousel>
 	</Container>
 {/each}
+
