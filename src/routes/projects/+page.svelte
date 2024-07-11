@@ -31,7 +31,7 @@
 			category: 'Self-hosted Projects',
 			projects: [
 				{
-					name: 'Silly Creative Collective',
+					title: 'Silly Creative Collective',
 					description: 'Soon to host many projects and services, SCC is ran by a group of friends!',
 					footer: 'In development',
 					thumbnail: '/images/projects/scc_logo.png',
@@ -39,7 +39,7 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'Mastodon',
+					title: 'Mastodon',
 					description: 'The Mastodon instance with the funny domain - @username@femboyfurry.net',
 					footer: 'Active',
 					thumbnail: '/images/socials/mastodon.svg',
@@ -48,7 +48,7 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'FurryFlix',
+					title: 'FurryFlix',
 					description: 'Yet another PeerTube instance with the funny domain - vid.femboyfurry.net',
 					footer: 'Active',
 					thumbnail: '/images/socials/peertube.svg',
@@ -62,7 +62,7 @@
 			category: 'Software Development',
 			projects: [
 				{
-					name: 'SlimeTora',
+					title: 'SlimeTora',
 					description: 'A program that connects all HaritoraX trackers to the SlimeVR server.',
 					footer: 'Electron/Bulma/TS',
 					thumbnail: '/images/projects/slimetora_icon.png',
@@ -71,7 +71,7 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'haritorax-interpreter',
+					title: 'haritorax-interpreter',
 					description: 'A node.js package that allows you to communicate with the HaritoraX FBT trackers.',
 					footer: 'NodeJS/TS',
 					thumbnail: '/images/projects/haritorax-interpreter.png',
@@ -80,7 +80,7 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'silence-remover',
+					title: 'silence-remover',
 					description: 'A Python script to remove silence from the beginning and end of audio files.',
 					footer: 'Python',
 					href: 'https://github.com/JovannMC/silence-remover',
@@ -88,13 +88,22 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'haritora-gx-poc',
+					title: 'haritora-gx-poc',
 					description: 'A proof-of-concept app that interprets the GX(6/2) dongle data for the HaritoraX Wireless.',
 					footer: 'Python',
 					thumbnail: '/images/projects/haritora-gx-poc.png',
 					href: 'https://github.com/JovannMC/haritora-gx-poc',
 					fit: 'contain',
 					fitPadding: 'p-2'
+				},
+				{
+					title: 'ServerMC',
+					description: 'A Minecraft server manager taking inspiration from MultiMC.',
+					footer: 'Electron/TS',
+					thumbnail: '/images/projects/servermc.png',
+					href: 'https://github.com/JovannMC/ServerMC',
+					fit: 'cover',
+					fitPadding: 'p-12'
 				}
 			]
 		},
@@ -102,14 +111,14 @@
 			category: 'Web Development',
 			projects: [
 				{
-					name: 'jovann.me',
+					title: 'jovann.me',
 					description: 'The website you\'re on! My personal (and more "serious") website.',
 					footer: 'SvelteKit/TS',
 					fit: 'contain',
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'femboyfurry.net',
+					title: 'femboyfurry.net',
 					description: 'My previous website - more of a joke. Most of my self-hosted projects will be hosted here.',
 					footer: 'Bulma/JS',
 					thumbnail: '/images/projects/femboyfurry-net.png',
@@ -117,7 +126,7 @@
 					fit: 'cover',
 				},
 				{
-					name: 'TheSauceSage',
+					title: 'TheSauceSage',
 					description: 'A website for the content creator, TheSauceSage, and their SMP. A free commission.',
 					footer: 'Vanilla/JS',
 					thumbnail: '/images/projects/thesaucesage.jpg',
@@ -126,7 +135,7 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: "Sky's portfolio",
+					title: "Sky's portfolio",
 					description: 'A small portfolio for Sky for their art and commissions. A free commission.',
 					footer: 'Vanilla/JS',
 					thumbnail: '/images/projects/sky_pfp.jpg',
@@ -140,7 +149,7 @@
 			category: 'Minecraft Development',
 			projects: [
 				{
-					name: 'MentionChat',
+					title: 'MentionChat',
 					description: 'A simple plugin to mention other players in chat.',
 					footer: 'Spigot/Java',
 					thumbnail: '/images/projects/mentionchat.png',
@@ -149,7 +158,7 @@
 					fitPadding: 'p-2'
 				},
 				{
-					name: 'PlayerInvincibility',
+					title: 'PlayerInvincibility',
 					description:
 						"Let players be invincible to other player attacks. I couldn't find a similar plugin, so I did it myself!",
 					footer: 'Spigot/Java',
@@ -159,7 +168,7 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'ArcherySMP',
+					title: 'ArcherySMP',
 					description: 'A plugin for the ArcherySMP server to add archers and hunters. A free commission.',
 					footer: 'Spigot/Java',
 					thumbnail: '/images/socials/spigotmc.png',
@@ -167,7 +176,7 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'JustFly',
+					title: 'JustFly',
 					description: 'Yet another flight plugin.',
 					footer: 'Spigot/Java',
 					thumbnail: '/images/socials/spigotmc.png',
@@ -176,7 +185,7 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'IslandTurfs',
+					title: 'IslandTurfs',
 					description: "A plugin recreating Protocraft's IslandTurfs minigame as a Spigot plugin.",
 					footer: 'Spigot/Java',
 					thumbnail: '/images/socials/spigotmc.png',
@@ -190,7 +199,7 @@
 			category: '"Game" Development',
 			projects: [
 				{
-					name: 'Salad Simulator',
+					title: 'Salad Simulator',
 					description: 'A (bad) game based off the program that earns you money, Salad.',
 					footer: 'Unity/C#',
 					thumbnail: '/images/projects/salad-simulator.png',
@@ -199,7 +208,7 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'Salad Clicker',
+					title: 'Salad Clicker',
 					description: 'A (bad) clicker game.. also based off the program that earns you money, Salad.',
 					footer: 'Unity/C#',
 					thumbnail: '/images/projects/salad-clicker.png',
@@ -207,7 +216,7 @@
 					fitPadding: 'p-12'
 				},
 				{
-					name: 'Actually Planned 3D Shooter',
+					title: 'Actually Planned 3D Shooter',
 					description: 'A really old Unity game I abandoned.. yeah that is actually the name.',
 					footer: 'Unity/C#',
 					thumbnail: '/images/projects/actually-planned-3d-shooter.png',
@@ -238,7 +247,7 @@
 			{#each category.projects as project}
 				<SplideSlide>
 					<Card
-						title={project.name}
+						title={project.title}
 						description={project.description}
 						footer={project.footer}
 						thumbnail={project.thumbnail}
@@ -251,11 +260,3 @@
 		</Splide>
 	</Container>
 {/each}
-
-<style>
-	:global(.splide__track),
-	:global(.splide__slide),
-	:global(.splide__list) {
-		overflow: visible !important;
-	}
-</style>

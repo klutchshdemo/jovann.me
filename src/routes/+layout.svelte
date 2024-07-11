@@ -93,4 +93,10 @@
 	:root {
 		--navbar-height: 68px;
 	}
+
+	:global(.splide__track),
+	:global(.splide__slide),
+	:global(.splide__list) {
+		overflow: visible !important;
+	}
 </style>
