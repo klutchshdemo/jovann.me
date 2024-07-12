@@ -12,9 +12,10 @@
 		menuOpen = !menuOpen;
 	}
 
-	// Fixes sveltekit issue w/ scroll preservation on navigation
 	afterNavigate(() => {
+		// Fixes sveltekit issue w/ scroll preservation on navigation
 		document.getElementById('page')?.scrollTo(0, 0);
+
 		menuOpen = false;
 	});
 </script>
@@ -54,7 +55,7 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
 					</svg>
 				</button>
-				<img class="h-9" src="/images/jovannmc_white_wordmark.png" alt="JovannMC wordmark logo" />
+				<a href="/"><img class="h-9" src="/images/jovannmc_white_wordmark.png" alt="JovannMC wordmark logo" /></a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<div class="hidden md:flex gap-8 items-center">
@@ -68,9 +69,9 @@
 	</svelte:fragment>
 
 	<!-- Hamburger menu contents -->
-	<div class="lg:hidden" class:open={menuOpen}>
+	<div class="md:hidden" class:open={menuOpen}>
 		{#if menuOpen}
-			<div transition:slide={{ duration: 300 }} class="absolute top-16 left-0 w-full z-50">
+			<div transition:slide={{ duration: 300 }} class="absolute left-0 w-full z-50">
 				<div class="flex flex-col gap-1 justify-center items-center bg-surface-900 shadow-lg px-4 py-2">
 					<a href="/" class="w-full text-center block py-2"> Home </a>
 					<a href="/videos" class="w-full text-center block py-2"> Videos </a>
