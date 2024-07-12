@@ -60,7 +60,7 @@
 	<meta content="Personal website/portfolio of JovannMC" property="og:description" />
 	<meta content="https://jovann.me" property="og:url" />
 	<meta content="https://jovann.me/images/jovannmc_white.png" property="og:image" />
-	<meta content="#222222" data-react-helmet="true" name="theme-color" />
+	<meta content="#dddddd" data-react-helmet="true" name="theme-color" />
 </svelte:head>
 
 <!-- App Shell -->
@@ -75,6 +75,7 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
 					</svg>
 				</button>
+				<!-- Wordmark -->
 				<a href="/"><img class="h-9" src="/images/jovannmc_white_wordmark.png" alt="JovannMC wordmark logo" /></a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">

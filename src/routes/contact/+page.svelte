@@ -11,7 +11,7 @@
 					description: "Send me an email, if that's more your thing!",
 					footer: 'Click to email me!',
 					thumbnail: '/images/socials/email.svg',
-					href: 'mailto:jovannmc@femboyfurry.net'
+					href: 'mailto:contact@femboyfurry.net'
 				},
 				{
 					name: 'Discord',
