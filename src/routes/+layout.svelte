@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
 	import { slide } from 'svelte/transition';
 
@@ -10,13 +11,32 @@
 
 	function toggleMenu() {
 		menuOpen = !menuOpen;
+		// makes sure that highlighted link also shows in hamburger menu for mobile
+		setTimeout(highlightCurrentLink, 0);
 	}
+
+	function highlightCurrentLink() {
+		let url = window.location.href;
+		let navLinks = document.querySelectorAll('a');
+
+		navLinks.forEach((link) => {
+			if (link.href === url) {
+				link.classList.add('font-bold');
+			} else {
+				link.classList.remove('font-bold');
+			}
+		});
+	}
+
+	onMount(() => {
+		highlightCurrentLink();
+	});
 
 	afterNavigate(() => {
 		// Fixes sveltekit issue w/ scroll preservation on navigation
 		document.getElementById('page')?.scrollTo(0, 0);
-
 		menuOpen = false;
+		highlightCurrentLink();
 	});
 </script>
 
@@ -59,10 +79,10 @@
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<div class="hidden md:flex gap-8 items-center">
-					<a href="/"> Home </a>
-					<a href="/videos"> Videos </a>
-					<a href="/contact"> Contact </a>
-					<a class="btn btn-sm variant-ghost-surface" href="/projects"> Projects </a>
+					<a href="/" id="home"> Home </a>
+					<a href="/videos" id="videos"> Videos </a>
+					<a href="/contact" id="contact"> Contact </a>
+					<a class="btn btn-sm variant-ghost-surface" href="/projects" id="projects"> Projects </a>
 				</div>
 			</svelte:fragment>
 		</AppBar>
@@ -73,10 +93,10 @@
 		{#if menuOpen}
 			<div transition:slide={{ duration: 300 }} class="absolute left-0 w-full z-50">
 				<div class="flex flex-col gap-1 justify-center items-center bg-surface-900 shadow-lg px-4 py-2">
-					<a href="/" class="w-full text-center block py-2"> Home </a>
-					<a href="/videos" class="w-full text-center block py-2"> Videos </a>
-					<a href="/contact" class="w-full text-center block py-2"> Contact </a>
-					<a href="/projects" class="btn w-full text-center block py-2 mb-2"> Projects </a>
+					<a href="/" class="w-full text-center block py-2" id="home"> Home </a>
+					<a href="/videos" class="w-full text-center block py-2" id="videos"> Videos </a>
+					<a href="/contact" class="w-full text-center block py-2" id="contact"> Contact </a>
+					<a href="/projects" class="btn w-full text-center block py-2 mb-2" id="projects"> Projects </a>
 				</div>
 			</div>
 		{/if}
