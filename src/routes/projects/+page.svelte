@@ -139,7 +139,7 @@
 					description: 'A small portfolio for Sky for their art and commissions. A free commission.',
 					footer: 'Vanilla/JS',
 					thumbnail: '/images/projects/sky_pfp.jpg',
-					href: 'Vanilla/JS',
+					href: 'https://sky.femboyfurry.net',
 					fit: 'cover',
 					fitPadding: 'p-12'
 				}
