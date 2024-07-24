@@ -35,21 +35,21 @@
 				{
 					name: 'Twitter',
 					description: "Follow me on Twitter (no it's not X, and never will be)",
-					footer: 'Click to follow me!',
+					footer: 'Click to follow!',
 					thumbnail: '/images/socials/twitter.svg',
 					href: 'https://twitter.com/JovannMC'
 				},
 				{
 					name: 'Mastodon',
 					description: 'Follow me on the fediverse (for micro-blogging)!',
-					footer: 'Click to follow me!',
+					footer: 'Click to follow!',
 					thumbnail: '/images/socials/mastodon.svg',
 					href: 'https://mastodon.femboyfurry.net/@JovannMC'
 				},
 				{
 					name: 'Bluesky',
 					description: 'Follow me on the "Twitter replacement" people moved to!',
-					footer: 'Click to follow me!',
+					footer: 'Click to follow!',
 					thumbnail: '/images/socials/bluesky.svg',
 					href: 'https://bsky.app/profile/femboyfurry.net'
 				}
