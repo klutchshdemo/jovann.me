@@ -62,7 +62,7 @@
 			title: 'SlimeTora',
 			description: 'A program that connects all HaritoraX trackers to the SlimeVR server.',
 			footer: 'Electron/Bulma/TS',
-			thumbnail: '/images/projects/slimetora_icon.png',
+			thumbnail: '/images/projects/slimetora_icon.webp',
 			href: 'https://github.com/OCSYT/SlimeTora'
 		},
 		{
@@ -84,7 +84,7 @@
 			title: 'Salad Simulator',
 			description: 'A (bad) game based off the program that earns you money, Salad.',
 			footer: 'Unity/C#',
-			thumbnail: '/images/projects/salad-simulator.png',
+			thumbnail: '/images/projects/salad-simulator.webp',
 			href: 'https://github.com/JovannMC/salad-simulator',
 			fit: 'cover',
 			fitPadding: 'p-12'
@@ -93,14 +93,14 @@
 			title: 'Silly Creative Collective',
 			description: 'Soon to host many projects and services, SCC is ran by a group of friends!',
 			footer: 'In development',
-			thumbnail: '/images/projects/scc_logo.png',
+			thumbnail: '/images/projects/scc_logo.webp',
 			fit: 'contain'
 		},
 		{
 			title: 'femboyfurry.net',
 			description: 'My previous website - more of a joke. Most of my self-hosted projects will be hosted here.',
 			footer: 'Bulma/JS',
-			thumbnail: '/images/projects/femboyfurry-net.png',
+			thumbnail: '/images/projects/femboyfurry-net.webp',
 			href: 'https://femboyfurry.net',
 			fit: 'cover'
 		},
@@ -120,21 +120,21 @@
 			title: 'finding insecure vnc sessions w/ VNC Resolver',
 			description: "I take a look at ComputerNewb's VNC Resolver project and find.. concerning VNC sessions.",
 			footer: 'May 23, 2024',
-			thumbnail: '/images/videos/insecure_vnc_sessions.jpg',
+			thumbnail: '/images/videos/insecure_vnc_sessions.webp',
 			href: 'https://www.youtube.com/watch?v=1KzjaRx9rWA'
 		},
 		{
 			title: 'playing tf2.. with a drawing tablet? (NO KB/MOUSE)',
 			description: "TF2 is a fun game, let's play it entirely on a drawing tablet. No keyboard or mouse allowed.",
 			footer: 'September 14, 2023',
-			thumbnail: '/images/videos/tf2_with_drawing_tablet.jpg',
+			thumbnail: '/images/videos/tf2_with_drawing_tablet.webp',
 			href: 'https://www.youtube.com/watch?v=4gKv2x5-lMg'
 		},
 		{
 			title: 'a cheaper FBT solution for PCVR and Quest users! | HaritoraX Wireless',
 			description: 'I unbox the HaritoraX Wireless from Shiftall, a cheaper VR full body tracking kit using IMUs!',
 			footer: 'January 26, 2024',
-			thumbnail: '/images/videos/haritorax_wireless_unboxing.jpg',
+			thumbnail: '/images/videos/haritorax_wireless_unboxing.webp',
 			href: 'https://www.youtube.com/watch?v=Ta7ZFd_VPDU'
 		},
 		{
@@ -142,14 +142,14 @@
 			description:
 				"time for a social VR game that's not VRChat! i get introduced to Resonite by Resonite mentor and friend, AnnoyingRains.",
 			footer: 'February 20, 2024',
-			thumbnail: '/images/videos/whats_a_resonite.jpg',
+			thumbnail: '/images/videos/whats_a_resonite.webp',
 			href: 'https://www.youtube.com/watch?v=MZAYtfQpwFY'
 		},
 		{
 			title: 'trolling apple with trollstore 2.0',
 			description: 'trollstore 2.0 is out, and supports even more iOS versions thanks to a new exploit with CoreTrust!',
 			footer: 'December 27, 2023',
-			thumbnail: '/images/videos/trolling_apple_with_trollstore.jpg',
+			thumbnail: '/images/videos/trolling_apple_with_trollstore.webp',
 			href: 'https://www.youtube.com/watch?v=_DCEyP5Qqdk'
 		},
 		{
@@ -157,7 +157,7 @@
 			description:
 				"a year ago, i found an old windows xp laptop. i just got an IDE to SATA adapter, so let's try to get it working!",
 			footer: 'September 26, 2023',
-			thumbnail: '/images/videos/windows_xp_ide_hdd.jpg',
+			thumbnail: '/images/videos/windows_xp_ide_hdd.webp',
 			href: 'https://www.youtube.com/watch?v=9ON_-wmOfHk'
 		},
 		{
@@ -165,14 +165,14 @@
 			description:
 				'time to play another game with a drawing tablet - Fortnite! No KB or mouse, just the drawing tablet.',
 			footer: 'November 24, 2023',
-			thumbnail: '/images/videos/fortnite_with_drawing_tablet.jpg',
+			thumbnail: '/images/videos/fortnite_with_drawing_tablet.webp',
 			href: 'https://www.youtube.com/watch?v=4MTo6PDZhSo'
 		},
 		{
 			title: 'exploring my old roblox games',
 			description: 'let\'s explore some of my "good" roblox games from when i joined roblox - early 2016!',
 			footer: 'October 13, 2023',
-			thumbnail: '/images/videos/old_roblox_games.jpg',
+			thumbnail: '/images/videos/old_roblox_games.webp',
 			href: 'https://www.youtube.com/watch?v=kab5UHNQy_8'
 		}
 	];
@@ -214,7 +214,7 @@
 		creation, program stuff, and self-host random services on my "funny" project domain. Some of my "skills" are below!
 	</p>
 	<div class="flex flex-col lg:flex-row items-center justify-center lg:gap-16">
-		<ResponsiveImage src="/images/jovann_hi.png" width="20rem" aspectRatio="1:1" transparent={true} />
+		<ResponsiveImage src="/images/jovann_hi.webp" width="20rem" aspectRatio="1:1" transparent={true} />
 		<div class="mt-6 lg:mt-0 text-center lg:text-left">
 			<ul class="flex flex-col list-disc list-inside text-xl gap-y-3">
 				<li>15 years of life (via Earth)</li>
@@ -276,7 +276,7 @@
 		Head over to the contact page to see all the (hundred) platforms you could use to contact me!
 	</p>
 	<div class="flex flex-col lg:flex-row items-center justify-center content-center lg:gap-16">
-		<ResponsiveImage src="/images/jovann_pout.png" width="20rem" aspectRatio="1:1" transparent={true} />
+		<ResponsiveImage src="/images/jovann_pout.webp" width="20rem" aspectRatio="1:1" transparent={true} />
 		<div class="mt-6 lg:mt-0 text-center lg:text-left">
 			<div class="flex flex-col text-xl">
 				<span class="text-center lg:text-left font-bold mt-0 mb-2">You could contact to:</span>

@@ -34,7 +34,7 @@
 					title: 'Silly Creative Collective',
 					description: 'Soon to host many projects and services, SCC is ran by a group of friends!',
 					footer: 'In development',
-					thumbnail: '/images/projects/scc_logo.png',
+					thumbnail: '/images/projects/scc_logo.webp',
 					fit: 'contain',
 					fitPadding: 'p-12'
 				},
@@ -65,7 +65,7 @@
 					title: 'SlimeTora',
 					description: 'A program that connects all HaritoraX trackers to the SlimeVR server.',
 					footer: 'Electron/Bulma/TS',
-					thumbnail: '/images/projects/slimetora_icon.png',
+					thumbnail: '/images/projects/slimetora_icon.webp',
 					href: 'https://github.com/OCSYT/SlimeTora',
 					fit: 'cover',
 					fitPadding: 'p-12'
@@ -100,7 +100,7 @@
 					title: 'ServerMC',
 					description: 'A Minecraft server manager taking inspiration from MultiMC.',
 					footer: 'Electron/TS',
-					thumbnail: '/images/projects/servermc.png',
+					thumbnail: '/images/projects/servermc.webp',
 					href: 'https://github.com/JovannMC/ServerMC',
 					fit: 'cover',
 					fitPadding: 'p-12'
@@ -121,7 +121,7 @@
 					title: 'femboyfurry.net',
 					description: 'My previous website - more of a joke. Most of my self-hosted projects will be hosted here.',
 					footer: 'Bulma/JS',
-					thumbnail: '/images/projects/femboyfurry-net.png',
+					thumbnail: '/images/projects/femboyfurry-net.webp',
 					href: 'https://femboyfurry.net',
 					fit: 'cover',
 				},
@@ -129,7 +129,7 @@
 					title: 'TheSauceSage',
 					description: 'A website for the content creator, TheSauceSage, and their SMP. A free commission.',
 					footer: 'Vanilla/JS',
-					thumbnail: '/images/projects/thesaucesage.jpg',
+					thumbnail: '/images/projects/thesaucesage.webp',
 					href: 'https://thesaucesage.com/',
 					fit: 'cover',
 					fitPadding: 'p-12'
@@ -138,7 +138,7 @@
 					title: "Sky's portfolio",
 					description: 'A small portfolio for Sky for their art and commissions. A free commission.',
 					footer: 'Vanilla/JS',
-					thumbnail: '/images/projects/sky_pfp.jpg',
+					thumbnail: '/images/projects/sky_pfp.webp',
 					href: 'https://sky.femboyfurry.net',
 					fit: 'cover',
 					fitPadding: 'p-12'
@@ -162,7 +162,7 @@
 					description:
 						"Let players be invincible to other player attacks. I couldn't find a similar plugin, so I did it myself!",
 					footer: 'Spigot/Java',
-					thumbnail: '/images/socials/spigotmc.png',
+					thumbnail: '/images/socials/spigotmc.webp',
 					href: 'https://github.com/JovannMC/PlayerInvincibility',
 					fit: 'contain',
 					fitPadding: 'p-12'
@@ -171,7 +171,7 @@
 					title: 'ArcherySMP',
 					description: 'A plugin for the ArcherySMP server to add archers and hunters. A free commission.',
 					footer: 'Spigot/Java',
-					thumbnail: '/images/socials/spigotmc.png',
+					thumbnail: '/images/socials/spigotmc.webp',
 					fit: 'contain',
 					fitPadding: 'p-12'
 				},
@@ -179,7 +179,7 @@
 					title: 'JustFly',
 					description: 'Yet another flight plugin.',
 					footer: 'Spigot/Java',
-					thumbnail: '/images/socials/spigotmc.png',
+					thumbnail: '/images/socials/spigotmc.webp',
 					href: 'https://www.spigotmc.org/resources/justfly-yet-another-flight-plugin.84407/',
 					fit: 'contain',
 					fitPadding: 'p-12'
@@ -188,7 +188,7 @@
 					title: 'IslandTurfs',
 					description: "A plugin recreating Protocraft's IslandTurfs minigame as a Spigot plugin.",
 					footer: 'Spigot/Java',
-					thumbnail: '/images/socials/spigotmc.png',
+					thumbnail: '/images/socials/spigotmc.webp',
 					href: 'https://github.com/JovannMC/IslandTurfs',
 					fit: 'contain',
 					fitPadding: 'p-12'
@@ -202,7 +202,7 @@
 					title: 'Salad Simulator',
 					description: 'A (bad) game based off the program that earns you money, Salad.',
 					footer: 'Unity/C#',
-					thumbnail: '/images/projects/salad-simulator.png',
+					thumbnail: '/images/projects/salad-simulator.webp',
 					href: 'https://github.com/JovannMC/salad-simulator',
 					fit: 'cover',
 					fitPadding: 'p-12'
@@ -211,7 +211,7 @@
 					title: 'Salad Clicker',
 					description: 'A (bad) clicker game.. also based off the program that earns you money, Salad.',
 					footer: 'Unity/C#',
-					thumbnail: '/images/projects/salad-clicker.png',
+					thumbnail: '/images/projects/salad-clicker.webp',
 					href: 'https://github.com/JovannMC/salad-clicker',
 					fitPadding: 'p-12'
 				},
@@ -219,7 +219,7 @@
 					title: 'Actually Planned 3D Shooter',
 					description: 'A really old Unity game I abandoned.. yeah that is actually the name.',
 					footer: 'Unity/C#',
-					thumbnail: '/images/projects/actually-planned-3d-shooter.png',
+					thumbnail: '/images/projects/actually-planned-3d-shooter.webp',
 					href: 'https://github.com/JovannMC/actually-planned-3d-shooter',
 					fitPadding: 'p-12'
 				}
