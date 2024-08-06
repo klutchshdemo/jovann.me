@@ -282,9 +282,9 @@
 				<span class="text-center lg:text-left font-bold mt-0 mb-2">You could contact to:</span>
 				<ul class="flex flex-col gap-y-2 list-disc list-inside">
 					<li>get to know me and become friends :D</li>
-					<li>ask for help on something I made/host</li>
+					<li>report issues/ask for help on something I have</li>
 					<li>suggest ideas for my next projects</li>
-					<li>report an issue on one of my current projects</li>
+					<li>give me free stuff and support me! (pls ty)</li>
 				</ul>
 				<span class="text-center lg:text-left font-bold mt-8 mb-2">You can't contact to:</span>
 				<ul class="flex flex-col gap-y-2 list-disc list-inside">

@@ -11,7 +11,7 @@
 		{ name: 'Vanillo', src: '/images/socials/vanillo.svg', href: 'https://vanillo.tv/u/JovannMC' },
 		{ name: 'Twitch', src: '/images/socials/twitch.svg', href: 'https://twitch.tv/JovannMC' },
 		{ name: 'PeerTube', src: '/images/socials/peertube.svg', href: 'https://vid.femboyfurry.net/c/jovannmc' },
-		{ name: 'Odysee', src: '/images/socials/odysee.svg', href: 'https://odysee.com/@JovannMC:7' }
+		{ name: 'Ko-fi', src: '/images/socials/ko-fi.svg', href: 'https://ko-fi.com/JovannMC' }
 	];
 
 	let firstRowLinks = socialLinks.slice(0, Math.ceil(socialLinks.length / 2));

@@ -59,6 +59,13 @@
 			category: 'Content Creation',
 			links: [
 				{
+					name: 'Ko-fi',
+					description: 'Support me with either a one-time or a recurring donation!',
+					footer: 'Click to donate!',
+					thumbnail: '/images/socials/ko-fi.svg',
+					href: 'https://ko-fi.com/JovannMC'
+				},
+				{
 					name: 'GitHub',
 					description: 'Find my open-sourced projects and my contributions!',
 					footer: 'Click to view my profile!',
@@ -92,13 +99,6 @@
 					footer: 'Click to subscribe!',
 					thumbnail: '/images/socials/peertube.svg',
 					href: 'https://vid.femboyfurry.net/c/jovannmc'
-				},
-				{
-					name: 'Odysee',
-					description: 'Follow me and watch my videos on the.. crypto platform. oh.',
-					footer: 'Click to follow!',
-					thumbnail: '/images/socials/odysee.svg',
-					href: 'https://odysee.com/@JovannMC:7'
 				}
 			]
 		}
