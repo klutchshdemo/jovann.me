@@ -12,6 +12,10 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
 	},
+	"engines": {
+		"node": "^18.18.0 || ^20.9.0 || >=21.1.0",
+		"npm": ">=9.5.1"
+	},
 	"dependencies": {
 		"@splidejs/svelte-splide": "^0.2.9",
 		"typeit": "^8.8.3"
